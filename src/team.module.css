@@ -16,7 +16,7 @@ ul {
     text-align: center;
 }
 
-li {
+.membercontainer li {
     max-width: 35vw;
 
 }

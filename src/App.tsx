@@ -7,6 +7,7 @@ import Projects from "./Projects";
 import Navbar from "./Navbar";
 import Astra from "./Astra";
 import Wsst from "./Wsst";
+import ErrorPage from "./404";
 
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
@@ -18,6 +19,8 @@ function App() {
         <Navbar />
 
         <Routes>
+          <Route path="*" element={<ErrorPage />} />
+
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
