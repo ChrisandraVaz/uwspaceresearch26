@@ -1,0 +1,80 @@
+.projectscontainer {
+    color: var(--text-color);
+    margin-top: 5rem;
+    padding: 2rem 2rem;
+}
+
+.allprojectscontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.astracontainer {
+    background-image: url("./assets/astrabg2.png");
+}
+
+.wsstcontainer {
+    background-image: url("./assets/wsstbg2.png");
+}
+
+#singleprojectcontainer {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+    padding: 2rem 2rem;
+    font-size: 0.8rem;
+}
+
+.containerleft h1 {
+    margin-bottom: 2rem;
+}
+
+.containerright p {
+    margin: 0;
+}
+
+.projectscontainer h3 {
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+    .projectscontainer {
+        padding: 3rem 8rem;
+    }
+
+    .projectstitle {
+        margin-bottom: 3rem;
+    }
+
+    #singleprojectcontainer {
+        min-height: 50vh;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        transition-duration: 200ms;
+    }
+
+    #singleprojectcontainer:hover {
+        box-shadow: 0 0 40px 0 #C36EE2;
+    }
+
+    .containerright p {
+        text-align: right;
+    }
+
+    .containerleft h1 {
+        margin-bottom: 0;
+        font-size: 6rem;
+    }
+
+    .containerleft p {
+        margin: 0;
+    }
+
+    .projectscontainer h3 {
+        margin-top: 3rem;
+    }
+}

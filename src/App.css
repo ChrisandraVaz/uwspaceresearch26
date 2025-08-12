@@ -1,0 +1,103 @@
+/* #root {
+  max-width: 3000px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+} */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+#root {
+  --text-color: #F2F0F5;
+  --text-color-dark: #2C2634;
+  --header-font-family: "Readex Pro", Avenir, Helvetica, Arial, sans-serif;
+  --header-font-size: 3.5rem;
+  --header-font-weight: 600;
+}
+
+nav {
+  top: 0;
+  position: fixed;
+  z-index: 10;
+  backdrop-filter: blur(15px);
+}
+
+.navbar {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 3rem;
+  background: linear-gradient(180deg, #040410 0%, rgba(75, 75, 108, 0) 100%);
+}
+
+#navbar-logo {
+  margin-right: auto;
+}
+
+.navbar-link {
+  color: var(--text-color);
+  transition-duration: 200ms;
+}
+
+.navbar-links {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.navbar-link:hover {
+  color: #DA7CE8;
+}
+
+h1,
+h2 {
+  font-weight: 600;
+}
+
+/* .logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 1000ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
