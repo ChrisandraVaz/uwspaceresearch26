@@ -60,11 +60,9 @@ export default function Home() {
   );
 }
 
-function handleAnchorClick(e: React.MouseEvent<HTMLAnchorElement>) {
-  // enable smooth scroll
+function handleAnchorClick() {
   document.documentElement.style.scrollBehavior = "smooth";
 
-  // after the scroll finishes (~500ms), turn it back off
   setTimeout(() => {
     document.documentElement.style.scrollBehavior = "auto";
   }, 500);
