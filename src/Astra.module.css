@@ -153,6 +153,12 @@
     background-repeat: no-repeat;
     color: var(--text-color-dark);
     margin-top: 2rem;
+    padding: 2rem 2rem;
+}
+
+.aboutthecompetitioncontent a {
+    color: var(--text-color-dark);
+    text-decoration: underline;
 }
 
 @media (min-width: 1000px) {
@@ -254,7 +260,6 @@
     }
 
     .projectaim {
-
         display: flex;
         align-items: flex-end;
     }
@@ -267,6 +272,7 @@
 
     .aboutthecompetition {
         background-position: center;
+        padding: 4rem 8rem;
     }
 
     .aboutthecompetitioncontent {
