@@ -127,10 +127,15 @@ export default function Astra() {
               students. Organized by SEDS Canada in collaboration with the
               Canadian Space Agency (CSA), this annual challenge invites
               students to design, build and test small scientific experiments to
-              be flown aboard high-altitude balloons. Our team has been selected
-              to design, build, and launch our experiment aboard a high-altitude
-              balloon, reaching up to 35 km to test it in near-space conditions.
-              For more information, check out the official website.
+              be flown aboard high-altitude balloons.<br></br>
+              <br></br>Our team has been selected to design, build, and launch
+              our experiment aboard a high-altitude balloon, reaching up to 35
+              km to test it in near-space conditions.
+              <br></br>
+              <br></br>For more information, check out the{" "}
+              <a href="https://www.seds.ca/can-sbx/" target="_blank">
+                official website.
+              </a>
             </p>
           </div>
         </div>

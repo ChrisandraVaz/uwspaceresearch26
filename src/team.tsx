@@ -91,49 +91,49 @@ const people: Person[] = [
 
 const alumni: Person[] = [
   {
-    name: "Devshi",
+    name: "Devshi Perera",
     role: "Project Lead & Sponsorship",
     imageUrl: avatarImageDevshi,
     link: "",
   },
   {
-    name: "Emilia",
+    name: "Emilia Castillo",
     role: "Outreach Lead",
     imageUrl: avatarImageEmilia,
     link: "",
   },
   {
-    name: "Ryan",
+    name: "Ryan Mark",
     role: "Mechanical Lead & Webmaster",
     imageUrl: avatarImageRyan,
     link: "https://www.linkedin.com/in/ryanymark/",
   },
   {
-    name: "Andre",
+    name: "Andre Arroyo-Cottier",
     role: "Mechanical Designer",
     imageUrl: avatarImageAndre,
     link: "",
   },
   {
-    name: "Lili",
+    name: "Lili Strong",
     role: "Electrical Lead",
     imageUrl: avatarImageLili,
     link: "",
   },
   {
-    name: "Nathan",
+    name: "Nathan Bellsmith",
     role: "Electrical Designer",
     imageUrl: avatarImageNathan,
     link: "",
   },
   {
-    name: "Sameek",
+    name: "Sameek Sharma",
     role: "Electrical Lead",
     imageUrl: avatarImageSameek,
     link: "https://www.linkedin.com/in/sameek-sharma/",
   },
   {
-    name: "Relja",
+    name: "Relja Vojvodic",
     role: "Firmware / Software Lead",
     imageUrl: avatarImageRelja,
     link: "",
