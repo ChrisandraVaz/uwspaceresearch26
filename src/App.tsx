@@ -1,4 +1,5 @@
 import "./App.css";
+import { Analytics } from "@vercel/analytics/next";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Home";
@@ -29,6 +30,7 @@ function App() {
         </Routes>
         <ScrollToTop />
       </Router>
+      <Analytics />
     </>
   );
 }
