@@ -25,6 +25,8 @@ import avatarImageChelsea from "./assets/avatars/Chelsea.jpg";
 import avatarImageElbert from "./assets/avatars/Elbert.jpg";
 import avatarImageIman from "./assets/avatars/Iman.jpg";
 import avatarImageAaryn from "./assets/avatars/Aaryn.jpg";
+import avatarImageRyanC from "./assets/avatars/RyanC.jpg";
+import avatarImageBenjamin from "./assets/avatars/Benjamin.jpg";
 
 const people: Person[] = [
   {
@@ -92,15 +94,15 @@ const people: Person[] = [
 const alumni: Person[] = [
   {
     name: "Devshi Perera",
-    role: "Project Lead & Sponsorship",
+    role: "Project Manager, Research, & Sponsorship",
     imageUrl: avatarImageDevshi,
-    link: "",
+    link: "https://www.linkedin.com/in/devshi-perera/",
   },
   {
     name: "Emilia Castillo",
-    role: "Outreach Lead",
+    role: "Business & Outreach Lead",
     imageUrl: avatarImageEmilia,
-    link: "",
+    link: "https://www.linkedin.com/in/emilia-castillo-179570295/",
   },
   {
     name: "Ryan Mark",
@@ -112,19 +114,19 @@ const alumni: Person[] = [
     name: "Andre Arroyo-Cottier",
     role: "Mechanical Designer",
     imageUrl: avatarImageAndre,
-    link: "",
+    link: "https://www.linkedin.com/in/andre-a-c/",
   },
   {
     name: "Lili Strong",
     role: "Electrical Lead",
     imageUrl: avatarImageLili,
-    link: "",
+    link: "https://www.linkedin.com/in/lili-strong/",
   },
   {
     name: "Nathan Bellsmith",
-    role: "Electrical Designer",
+    role: "Integration & Systems Lead",
     imageUrl: avatarImageNathan,
-    link: "",
+    link: "https://www.linkedin.com/in/nathan-bellsmith-244a13173/",
   },
   {
     name: "Sameek Sharma",
@@ -136,7 +138,19 @@ const alumni: Person[] = [
     name: "Relja Vojvodic",
     role: "Firmware / Software Lead",
     imageUrl: avatarImageRelja,
-    link: "",
+    link: "https://www.linkedin.com/in/relja-vojvodic-13746b1b8/",
+  },
+  {
+    name: "Ryan Chang",
+    role: "Flight Campaign & Logistics",
+    imageUrl: avatarImageRyanC,
+    link: "https://www.linkedin.com/in/ryan-chang66/",
+  },
+  {
+    name: "Benjamin Orchard",
+    role: "Research",
+    imageUrl: avatarImageBenjamin,
+    link: "https://www.linkedin.com/in/benjamin-orchard/",
   },
 ];
 
