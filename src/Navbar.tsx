@@ -18,6 +18,9 @@ export default function Navbar() {
             <Link to="/projects">
               <div className="navbar-link">Projects</div>
             </Link>
+            <Link to="/sponsors">
+              <div className="navbar-link">Sponsors</div>
+            </Link>
           </div>
         </div>
       </nav>
