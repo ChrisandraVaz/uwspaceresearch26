@@ -31,28 +31,35 @@ export default function Home() {
           <h1>Our Projects</h1>
         </div>
         <div className={styles.projectscontent}>
-          <Link to="/projects/astra" className={styles.projectscontenttopbox}>
+          <Link to="/projects/wsst" className={styles.projectscontenttopbox}>
             <div className={styles.projectscontenttopbox2}>
-              <img src={astraText}></img>
-              <p>Adaptive Signal Transmission and Real-time Analytics</p>
+              <h2>WSST</h2>
+              <p>Waterloo Space Soldering Team</p>
             </div>
           </Link>
           <div className={styles.projectscontentbottombox}>
             <Link
-              to="/projects/wsst"
+              to="/projects/astra"
               className={styles.projectscontentbottomleft}
             >
               <div>
-                <h2>WSST</h2>
-                <p>Waterloo Space Soldering Team</p>
+                <img src={astraText} className={styles.astraTextImg}></img>
+                <p>Adaptive Signal Transmission and Real-time Analytics</p>
               </div>
             </Link>
-            <Link to="/projects" className={styles.projectscontentbottomright}>
+            <Link
+              to="/projects/space-sustainability"
+              className={styles.projectscontentbottomright}
+            >
               <div>
-                <h2>See all projects</h2>
+                <h2>Space Sustainability</h2>
+                <p>Coming Soon</p>
               </div>
             </Link>
           </div>
+          <Link to="/projects" className={styles.seeallprojects}>
+            See all projects
+          </Link>
         </div>
       </div>
       <Footer />

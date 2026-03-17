@@ -96,6 +96,35 @@
     margin-bottom: 1rem;
 }
 
+.members p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.projectLinks {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.projectLink {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    border: 2px solid #FFF;
+    background-color: transparent;
+    font-size: 1rem;
+    color: var(--text-color) !important;
+    font-weight: 600;
+    transition-duration: 200ms;
+    cursor: pointer;
+}
+
+.projectLink:hover {
+    box-shadow: 0 0 10px 0 #E168FF, 0 0 15px 0 #E168FF;
+}
+
 .membername h3 {
     margin-bottom: 0;
 }
@@ -144,7 +173,7 @@
         padding: 8rem 8rem;
     }
 
-    h2 {
+    .members h2 {
         font-size: 3rem;
     }
 }

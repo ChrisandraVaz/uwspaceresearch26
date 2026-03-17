@@ -18,6 +18,10 @@
     background-image: url("./assets/wsstbg2.png");
 }
 
+.sscontainer {
+    background-image: url("./assets/projects bg.png");
+}
+
 #singleprojectcontainer {
     background-size: cover;
     background-position: center;
