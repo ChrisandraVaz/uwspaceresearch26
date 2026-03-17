@@ -29,7 +29,7 @@
     padding-bottom: 20vw;
 }
 
-h1 {
+.herotextcontainer h1 {
     color: var(--text-color);
     font-family: var(--header-font-family);
     font-size: clamp(2rem, 3.5vw + 0.75rem, 4rem);
@@ -127,7 +127,7 @@ h1 {
     flex-direction: column;
     padding: 2rem;
 
-    background-image: url("./assets/astra bg.png");
+    background-image: url("./assets/wsst bg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -156,6 +156,13 @@ h1 {
     mix-blend-mode: plus-lighter;
 }
 
+.astraTextImg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    mix-blend-mode: plus-lighter;
+}
+
 .projectscontentbottombox {
     flex: 1 1 0%;
     display: flex;
@@ -169,7 +176,7 @@ h1 {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    background-image: url("./assets/wsst bg.png");
+    background-image: url("./assets/astra bg.png");
 }
 
 .projectscontentbottomleft:hover,
@@ -197,8 +204,28 @@ h1 {
 }
 
 .projectscontentbottomleft p,
-h2 {
+.projectscontentbottomleft h2 {
     margin: 0;
+}
+
+.seeallprojects {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid #FFF;
+    background-color: transparent;
+    width: fit-content;
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 600;
+    transition-duration: 200ms;
+    cursor: pointer;
+    text-align: center;
+    align-self: center;
+}
+
+.seeallprojects:hover {
+    box-shadow: 0 0 10px 0 #E168FF, 0 0 15px 0 #E168FF;
 }
 
 

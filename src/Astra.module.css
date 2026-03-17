@@ -161,6 +161,21 @@
     text-decoration: underline;
 }
 
+.teamSection {
+    color: var(--text-color);
+    background-image: url("./assets/team bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.teamSection>h3 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
 @media (min-width: 1000px) {
 
     .astraprojectcontainer>* {
@@ -281,5 +296,9 @@
 
     .wsstcontainer>* {
         padding: 2rem 8rem;
+    }
+
+    .teamSection {
+        padding: 8rem 8rem;
     }
 }

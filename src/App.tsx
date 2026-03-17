@@ -8,6 +8,7 @@ import Navbar from "./Navbar";
 import Astra from "./Astra";
 import Wsst from "./Wsst";
 import Sponsors from "./Sponsors";
+import SpaceSustainability from "./SpaceSustainability";
 import ErrorPage from "./404";
 
 import { useEffect } from "react";
@@ -27,6 +28,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/astra" element={<Astra />} />
           <Route path="/projects/wsst" element={<Wsst />} />
+          <Route path="/projects/space-sustainability" element={<SpaceSustainability />} />
           <Route path="/sponsors" element={<Sponsors />} />
         </Routes>
         <ScrollToTop />

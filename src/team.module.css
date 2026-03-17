@@ -1,78 +1,160 @@
-.membercontainer {
-    padding: 2rem 0rem;
-
-    border-radius: 25px;
-    background: rgba(26, 26, 71, 0.50);
-    background-blend-mode: multiply;
-
-    /* blur */
-    box-shadow: 0 4px 8px 0 rgba(101, 64, 211, 0.60) inset;
-    backdrop-filter: blur(10px);
+/* ── Pyramid wrapper (current team) ── */
+.pyramid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    padding: 2.5rem 1.5rem;
+    border-radius: 20px;
+    background: rgba(15, 15, 45, 0.55);
+    border: 1px solid rgba(195, 110, 226, 0.15);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(12px);
 }
 
-ul {
-    list-style-type: none;
-    padding: 1rem;
+/* Centered rows (Managers, Research+Business) */
+.rowcentered {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.rowcentered li {
     text-align: center;
+    width: 110px;
 }
 
-.membercontainer li {
-    max-width: 35vw;
+/* Grid rows (Software, Electrical, Mechanical) */
+.rowgrid {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
 
+.rowgrid li {
+    text-align: center;
+    width: 120px;
+}
+
+/* ── Alumni container ── */
+.membercontainer {
+    padding: 2.5rem 1.5rem;
+    border-radius: 20px;
+    background: rgba(15, 15, 45, 0.55);
+    border: 1px solid rgba(195, 110, 226, 0.15);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(12px);
+    width: 100%;
 }
 
 .membercontainerli {
-    margin-left: auto;
-    margin-right: auto;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
     display: grid;
     max-width: 42rem;
-    /* max-w-2xl */
     grid-template-columns: repeat(2, 1fr);
     column-gap: 0.5rem;
-    /* gap-x-8 */
     row-gap: 2rem;
-    /* gap-y-16 */
 }
 
 .membercontainerli li {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
+/* ── Avatar ── */
 .memberpic {
     width: 96px;
     height: 96px;
     border-radius: 9999px;
     overflow: hidden;
+    margin: 0 auto;
+    border: 2px solid rgba(195, 110, 226, 0.3);
+    transition: all 300ms ease;
+}
 
-    margin-left: auto;
-    margin-right: auto;
-
-    transition-duration: 200ms;
+.memberpic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .memberpic:hover {
-    box-shadow: 0 0 24.6px 0 #C36EE2;
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: scale(1.08);
 }
 
+/* ── Text ── */
 .membername {
     margin-bottom: 0;
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #fff;
 }
 
 .memberrole {
-    margin-top: 0;
+    margin-top: 0.15rem;
     font-weight: 400;
-    font-size: 0.8rem;
+    font-size: 0.72rem;
+    color: rgba(255, 255, 255, 0.55);
+    line-height: 1.3;
 }
 
-@media (min-width: 1024px) {
+/* ── Tablet ── */
+@media (min-width: 768px) {
     .membercontainerli {
-        margin-left: 0;
-        margin-right: 0;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .rowcentered li,
+    .rowgrid li {
+        width: 115px;
+    }
+
+    .memberpic {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* ── Desktop ── */
+@media (min-width: 1024px) {
+    .pyramid {
+        padding: 3rem;
+        gap: 1.75rem;
+    }
+
+    .rowcentered {
+        gap: 2rem;
+    }
+
+    .rowcentered li {
+        width: 130px;
+    }
+
+    .rowgrid li {
+        width: 120px;
+    }
+
+    .membercontainerli {
         max-width: none;
         grid-template-columns: repeat(5, 1fr);
+    }
+
+    .membercontainer {
+        padding: 3rem;
+    }
+
+    .memberpic {
+        width: 110px;
+        height: 110px;
     }
 }
