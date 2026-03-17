@@ -8,6 +8,7 @@ import astronautIcon from "./assets/astronaut.svg";
 
 import Footer from "./footer.tsx";
 import ProjectsHeader from "./components/ProjectHeader.tsx";
+import { TeamGrid, astraTeam } from "./team.tsx";
 
 export default function Astra() {
   return (
@@ -138,6 +139,10 @@ export default function Astra() {
               </a>
             </p>
           </div>
+        </div>
+        <div className={styles.teamSection}>
+          <h3>Meet the Team</h3>
+          <TeamGrid members={astraTeam} />
         </div>
       </div>
       <Footer />
