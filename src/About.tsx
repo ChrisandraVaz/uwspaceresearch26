@@ -1,11 +1,13 @@
 import styles from "./About.module.css";
 
 import Footer from "./footer.tsx";
-import { Alumni, Team } from "./team.tsx";
+import { Alumni } from "./team.tsx";
 
 import wsrtLogoL from "./assets/wsrt large icon.png";
 import linkedInLogo from "./assets/linkedin.svg";
 import instagramLogo from "./assets/Instagram.svg";
+
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -75,8 +77,18 @@ export default function About() {
       </div>
       <div className={styles.members}>
         <h2>Our Team</h2>
-        <h3>Current Members</h3>
-        <Team />
+        <p>
+          Our team members are organized by project. Visit each project page to
+          see who's working on it and their roles.
+        </p>
+        <div className={styles.projectLinks}>
+          <Link to="/projects/wsst" className={styles.projectLink}>
+            WSST Team
+          </Link>
+          <Link to="/projects/astra" className={styles.projectLink}>
+            ASTRA Team
+          </Link>
+        </div>
         <h3>Alumni</h3>
         <Alumni />
       </div>

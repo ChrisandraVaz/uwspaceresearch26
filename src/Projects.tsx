@@ -13,6 +13,21 @@ export default function Projects() {
           </p>
         </div>
         <div className={styles.allprojectscontainer}>
+          <Link to="/projects/wsst">
+            <div
+              className={styles.wsstcontainer}
+              id={styles.singleprojectcontainer}
+            >
+              <div className={styles.containerleft}>
+                <h1>WSST</h1>
+                <p>Waterloo Space Soldering Team</p>
+              </div>
+              <div className={styles.containerright}>
+                <p>Nov 2025 - Current</p>
+                <p>CAN-RGX 9</p>
+              </div>
+            </div>
+          </Link>
           <Link to="/projects/astra">
             <div
               className={styles.astracontainer}
@@ -28,23 +43,21 @@ export default function Projects() {
               </div>
             </div>
           </Link>
-          <Link to="/projects/wsst">
+          <Link to="/projects/space-sustainability">
             <div
-              className={styles.wsstcontainer}
+              className={styles.sscontainer}
               id={styles.singleprojectcontainer}
             >
               <div className={styles.containerleft}>
-                <h1>WSST</h1>
-                <p>Waterloo Space Soldering Team</p>
+                <h1>Space Sustainability</h1>
+                <p>Advancing sustainable practices for space exploration</p>
               </div>
               <div className={styles.containerright}>
-                <p>Jan 2024 - Aug 2024</p>
-                <p>CAN-RGX 7</p>
+                <p>Coming Soon</p>
               </div>
             </div>
           </Link>
         </div>
-        <h3>And more to come!</h3>
       </div>
     </>
   );
