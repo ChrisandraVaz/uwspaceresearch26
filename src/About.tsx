@@ -89,7 +89,6 @@ export default function About() {
             ASTRA Team
           </Link>
         </div>
-        <h3>Alumni</h3>
         <Alumni />
       </div>
       <Footer />

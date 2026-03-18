@@ -50,10 +50,11 @@ export default function Projects() {
             >
               <div className={styles.containerleft}>
                 <h1>Space Sustainability</h1>
-                <p>Advancing sustainable practices for space exploration</p>
+                <p>Detecting and tracking space debris from orbit</p>
               </div>
               <div className={styles.containerright}>
-                <p>Coming Soon</p>
+                <p>Jan 2026 - Current</p>
+                <p>Hyperion</p>
               </div>
             </div>
           </Link>
