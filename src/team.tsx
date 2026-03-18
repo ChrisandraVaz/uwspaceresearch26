@@ -3,8 +3,9 @@ import styles from "./team.module.css";
 interface Person {
   name: string;
   role: string;
-  imageUrl: string;
+  imageUrl?: string;
   link?: string;
+  placeholder?: boolean;
 }
 
 // Current team avatars
@@ -26,6 +27,9 @@ import avatarMysha from "./assets/avatars/Mysha.jpg";
 import avatarJady from "./assets/avatars/Jady.jpg";
 import avatarAdelina from "./assets/avatars/Adelina.png";
 import avatarCaleb from "./assets/avatars/Caleb.png";
+
+// Space Sustainability
+import avatarMadison from "./assets/madison-prange.jpg";
 
 // Alumni avatars
 import avatarEmilia from "./assets/avatars/Emilia.jpg";
@@ -91,6 +95,16 @@ export const astraTeam: Person[] = [
   { name: "Megan Chang", role: "Outreach Lead", imageUrl: avatarMegan, link: "https://www.linkedin.com/in/meganchang2/" },
 ];
 
+// Space Sustainability project team
+export const ssTeam: Person[] = [
+  { name: "Madison Prange", role: "Project Lead", imageUrl: avatarMadison },
+  { name: "Coming Soon", role: "Electrical", placeholder: true },
+  { name: "Coming Soon", role: "Mechanical", placeholder: true },
+  { name: "Coming Soon", role: "Software", placeholder: true },
+  { name: "Coming Soon", role: "Software", placeholder: true },
+  { name: "Coming Soon", role: "Research", placeholder: true },
+];
+
 const alumni: Person[] = [
   { name: "Emilia Castillo", role: "Business & Outreach Lead", imageUrl: avatarEmilia },
   { name: "Ryan Mark", role: "Mechanical Lead & Webmaster", imageUrl: avatarRyan },
@@ -112,7 +126,19 @@ function MemberCard({ person }: { person: Person }) {
   const content = (
     <>
       <div className={styles.memberpic}>
-        <img src={person.imageUrl} alt={person.name} width={96} height={96} />
+        {person.placeholder ? (
+          <div className={styles.placeholderavatar}>
+            <svg viewBox="0 0 24 24" fill="none" width="40" height="40">
+              <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" fill="rgba(255,255,255,0.35)"/>
+            </svg>
+          </div>
+        ) : person.imageUrl ? (
+          <img src={person.imageUrl} alt={person.name} width={96} height={96} />
+        ) : (
+          <div className={styles.placeholderavatar}>
+            {person.name.split(" ").map((n) => n[0]).join("")}
+          </div>
+        )}
       </div>
       <h3 className={styles.membername}>{person.name}</h3>
       <p className={styles.memberrole}>{person.role}</p>
@@ -161,6 +187,7 @@ export function TeamGrid({ members }: { members: Person[] }) {
 export function Alumni() {
   return (
     <div className={styles.membercontainer}>
+      <h3 className={styles.alumniheading}>Alumni</h3>
       <ul role="list" className={styles.membercontainerli}>
         {alumni.map((person, i) => (
           <MemberCard key={i} person={person} />
