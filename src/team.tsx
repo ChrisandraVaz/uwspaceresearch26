@@ -17,7 +17,7 @@ import avatarKatherine from "./assets/avatars/Katherine.png";
 import avatarAsmi from "./assets/avatars/Asmi.jpg";
 import avatarCatherine from "./assets/avatars/Catherine.png";
 import avatarKrish from "./assets/avatars/Krish.png";
-import avatarShamanthi from "./assets/avatars/Shamanthi.png";
+import avatarShamanthi from "./assets/avatars/shamanthi.jpg";
 import avatarZiren from "./assets/avatars/Ziren.png";
 import avatarFaraaz from "./assets/avatars/Faraaz.png";
 import avatarRachel from "./assets/avatars/Rachel.png";
