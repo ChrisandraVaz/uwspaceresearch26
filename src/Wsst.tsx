@@ -35,13 +35,11 @@ import heatInsulation from "./assets/wsst/heat-insulation.png";
 import cogBalancing from "./assets/wsst/cog-balancing.png";
 
 // Budget images
-import fundingTracking from "./assets/wsst/funding-tracking.png";
-import budgetSheet from "./assets/wsst/budget-sheet.png";
 
 export default function Wsst() {
   return (
     <>
-      <div className={styles.astraprojectcontainer}>
+      <div className={`${styles.astraprojectcontainer} ${wsstStyles.wsstPage}`}>
         <ProjectHeader
           title="WSST"
           subtitle="Waterloo Space Soldering Team"
@@ -836,50 +834,6 @@ export default function Wsst() {
                 </tr>
               </tfoot>
             </table>
-          </div>
-        </div>
-
-        {/* Budget & Funding */}
-        <div className={styles.projectgoals}>
-          <div className={wsstStyles.budgetSection}>
-            <h3>Budget & Funding</h3>
-            <p>
-              WSST is funded through a combination of university grants,
-              engineering society sponsorships, in-kind lab access, and industry
-              sponsors. The total project budget covers components, testing,
-              software licenses, outreach, and flight campaign expenses.
-            </p>
-            <div className={wsstStyles.budgetHighlights}>
-              <div className={wsstStyles.budgetHighlight}>
-                <h4>$11,000</h4>
-                <span>Total Budget</span>
-              </div>
-              <div className={wsstStyles.budgetHighlight}>
-                <h4>$71,043</h4>
-                <span>Funding Secured</span>
-              </div>
-              <div className={wsstStyles.budgetHighlight}>
-                <h4>$6,000</h4>
-                <span>Flight Campaign</span>
-              </div>
-              <div className={wsstStyles.budgetHighlight}>
-                <h4>$1,700</h4>
-                <span>Testing & Research</span>
-              </div>
-            </div>
-            <div className={wsstStyles.budgetImages}>
-              <div className={wsstStyles.budgetImageItem}>
-                <img src={budgetSheet} alt="WSST budget breakdown by category" />
-                <p>Budget breakdown by expense category</p>
-              </div>
-              <div className={wsstStyles.budgetImageItem}>
-                <img
-                  src={fundingTracking}
-                  alt="WSST funding and grant tracking"
-                />
-                <p>Funding sources and grant tracking</p>
-              </div>
-            </div>
           </div>
         </div>
 
