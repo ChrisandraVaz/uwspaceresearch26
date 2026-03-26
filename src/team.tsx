@@ -97,12 +97,22 @@ export const astraTeam: Person[] = [
 
 // Space Sustainability project team
 export const ssTeam: Person[] = [
-  { name: "Madison Prange", role: "Project Lead", imageUrl: avatarMadison },
-  { name: "Coming Soon", role: "Electrical", placeholder: true },
-  { name: "Coming Soon", role: "Mechanical", placeholder: true },
-  { name: "Coming Soon", role: "Software", placeholder: true },
-  { name: "Coming Soon", role: "Software", placeholder: true },
-  { name: "Coming Soon", role: "Research", placeholder: true },
+  { name: "Anita Shunbuli", role: "Member", placeholder: true },
+  { name: "Madison Prange", role: "Member", imageUrl: avatarMadison },
+  { name: "Kate Jessop", role: "Member", placeholder: true },
+  { name: "Gurpreet Singh", role: "Member", placeholder: true },
+  { name: "Drishti Manilall", role: "Member", placeholder: true },
+  { name: "Aidan Schreder", role: "Member", placeholder: true },
+  { name: "Anaisha Jain", role: "Member", placeholder: true },
+  { name: "Nikiel Lange", role: "Member", placeholder: true },
+  { name: "Theria Liu", role: "Member", placeholder: true },
+  { name: "Lakysha Ramnani", role: "Member", placeholder: true },
+  { name: "Isabella Lyn", role: "Member", placeholder: true },
+  { name: "Hazel Bains", role: "Member", placeholder: true },
+  { name: "Sydney Yang", role: "Member", placeholder: true },
+  { name: "Krish Jain", role: "Member", placeholder: true },
+  { name: "Alex Ng", role: "Member", placeholder: true },
+  { name: "Emily Hoang", role: "Member", placeholder: true },
 ];
 
 const alumni: Person[] = [

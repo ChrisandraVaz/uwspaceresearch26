@@ -375,70 +375,6 @@
     opacity: 0.85;
 }
 
-/* Budget section */
-.budgetSection {
-    padding: 0 2rem;
-}
-
-.budgetSection h3 {
-    margin-bottom: 1rem;
-}
-
-.budgetImages {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    margin-top: 1rem;
-}
-
-.budgetImageItem {
-    border-radius: 1rem;
-    overflow: hidden;
-}
-
-.budgetImageItem img {
-    width: 100%;
-    border-radius: 1rem;
-    background: white;
-    padding: 0.5rem;
-}
-
-.budgetImageItem p {
-    font-size: 0.7rem !important;
-    margin-top: 0.5rem;
-    opacity: 0.6;
-    color: var(--text-color);
-    text-align: center;
-}
-
-.budgetHighlights {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.75rem;
-    margin-top: 1rem;
-}
-
-.budgetHighlight {
-    border-radius: 0.75rem;
-    background: rgba(101, 64, 211, 0.12);
-    border: 1px solid rgba(101, 64, 211, 0.25);
-    padding: 0.75rem;
-    text-align: center;
-}
-
-.budgetHighlight h4 {
-    margin: 0;
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--text-color);
-}
-
-.budgetHighlight span {
-    font-size: 0.65rem;
-    opacity: 0.6;
-    color: var(--text-color);
-}
-
 /* Power budget table */
 .powerTable {
     width: 100%;
@@ -579,6 +515,11 @@
     opacity: 0.9;
 }
 
+/* Section spacing for mobile/tablet */
+.wsstPage > div + div {
+    margin-top: 1.5rem;
+}
+
 /* Desktop overrides */
 @media (min-width: 1000px) {
     .solderComparison {
@@ -647,18 +588,6 @@
 
     .procedurePhase {
         flex: 1;
-    }
-
-    .budgetSection {
-        padding: 0;
-    }
-
-    .budgetImages {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .budgetHighlights {
-        grid-template-columns: repeat(4, 1fr);
     }
 
     .groundTestGrid {
