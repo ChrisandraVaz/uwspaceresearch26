@@ -11,28 +11,29 @@ import { Team } from "./team";
 import solderLowVoid from "./assets/wsst/solder-low-void.jpg";
 import solderHighVoid from "./assets/wsst/solder-high-void.jpg";
 
-// CAD / design images
-import centrifugeAssembly from "./assets/wsst/centrifuge-assembly.png";
-import centrifugeFront from "./assets/wsst/centrifuge-front.png";
-import pelicanCaseLayout from "./assets/wsst/pelican-case-layout.png";
-import solderingAssembly from "./assets/wsst/soldering-assembly.png";
-import wireFeederCad from "./assets/wsst/wire-feeder-cad.png";
-import tipSledCad from "./assets/wsst/tip-sled-cad.png";
-import pcbCarrier from "./assets/wsst/pcb-carrier.png";
+// CAD / design images — commented out to protect IP
+// import centrifugeAssembly from "./assets/wsst/centrifuge-assembly.png";
+// import centrifugeFront from "./assets/wsst/centrifuge-front.png";
+// import pelicanCaseLayout from "./assets/wsst/pelican-case-layout.png";
+// import solderingAssembly from "./assets/wsst/soldering-assembly.png";
+// import wireFeederCad from "./assets/wsst/wire-feeder-cad.png";
+// import tipSledCad from "./assets/wsst/tip-sled-cad.png";
+// import pcbCarrier from "./assets/wsst/pcb-carrier.png";
 
-// Prototype images
-import wireFeederPrototype from "./assets/wsst/wire-feeder-prototype.png";
-import tipSledPrototype from "./assets/wsst/tip-sled-prototype.png";
-import testJigCad from "./assets/wsst/test-jig-cad.png";
+// Prototype images — commented out to protect IP
+// import wireFeederPrototype from "./assets/wsst/wire-feeder-prototype.png";
+// import tipSledPrototype from "./assets/wsst/tip-sled-prototype.png";
+// import testJigCad from "./assets/wsst/test-jig-cad.png";
 
-// System diagrams
-import electricalDiagram from "./assets/wsst/electrical-diagram.png";
-import softwareDiagram from "./assets/wsst/software-diagram.png";
+// System diagrams — commented out to protect IP
+// import electricalDiagram from "./assets/wsst/electrical-diagram.png";
+// import softwareDiagram from "./assets/wsst/software-diagram.png";
 
 // Design challenge images
-import alignmentGuide from "./assets/wsst/alignment-guide.png";
-import heatInsulation from "./assets/wsst/heat-insulation.png";
-import cogBalancing from "./assets/wsst/cog-balancing.png";
+// Challenge images — commented out to protect IP
+// import alignmentGuide from "./assets/wsst/alignment-guide.png";
+// import heatInsulation from "./assets/wsst/heat-insulation.png";
+// import cogBalancing from "./assets/wsst/cog-balancing.png";
 
 // Budget images
 
@@ -361,6 +362,7 @@ export default function Wsst() {
             </p>
           </div>
 
+          {/* CAD gallery commented out to protect IP
           <div className={styles.projectgoalssection5}>
             <div className={wsstStyles.designGallery}>
               <div className={wsstStyles.designCard}>
@@ -455,6 +457,7 @@ export default function Wsst() {
               </div>
             </div>
           </div>
+          */}
         </div>
 
         {/* Electrical & Software */}
@@ -487,6 +490,7 @@ export default function Wsst() {
             </div>
           </div>
 
+          {/* Electrical & software diagrams commented out to protect IP
           <div className={styles.projectgoalssection5}>
             <div className={wsstStyles.diagramGrid}>
               <div className={wsstStyles.diagramItem}>
@@ -502,6 +506,7 @@ export default function Wsst() {
               </div>
             </div>
           </div>
+          */}
         </div>
 
         {/* Preliminary Testing */}
@@ -513,6 +518,7 @@ export default function Wsst() {
               design concepts before full system integration.
             </p>
           </div>
+          {/* Prototype images commented out to protect IP
           <div className={styles.projectgoalssection5}>
             <div className={wsstStyles.prototypingGallery}>
               <div className={wsstStyles.prototypeCard}>
@@ -556,6 +562,7 @@ export default function Wsst() {
               </div>
             </div>
           </div>
+          */}
         </div>
 
         {/* Full Cycle Ground Test */}
@@ -658,11 +665,11 @@ export default function Wsst() {
                   adjustability to allow guides to correct tip position during
                   actuation.
                 </p>
-                <img
+                {/* <img
                   src={alignmentGuide}
                   alt="PCB alignment guide detail"
                   className={wsstStyles.challengeImg}
-                />
+                /> */}
               </div>
               <div className={wsstStyles.challengeCard}>
                 <h5>Heat & Fire Hazards</h5>
@@ -680,11 +687,11 @@ export default function Wsst() {
                   tips prevents accidental contact when exchanging PCB carriers.
                   Irons are actively cooled during level flight.
                 </p>
-                <img
+                {/* <img
                   src={heatInsulation}
                   alt="Tip sled with fiberglass insulation"
                   className={wsstStyles.challengeImg}
-                />
+                /> */}
               </div>
               <div className={wsstStyles.challengeCard}>
                 <h5>Center of Gravity Balancing</h5>
@@ -701,11 +708,11 @@ export default function Wsst() {
                   similar to tire balancing weights. An accelerometer will be
                   mounted inside during ground tests to evaluate vibrations.
                 </p>
-                <img
+                {/* <img
                   src={cogBalancing}
                   alt="Tire balancing weight reference"
                   className={wsstStyles.challengeImg}
-                />
+                /> */}
               </div>
             </div>
           </div>
