@@ -1,3 +1,20 @@
 .DS_Store
 node_modules
 .claude/
+
+# WSST CAD/design images - protect IP
+src/assets/wsst/centrifuge-assembly.png
+src/assets/wsst/centrifuge-front.png
+src/assets/wsst/pelican-case-layout.png
+src/assets/wsst/soldering-assembly.png
+src/assets/wsst/wire-feeder-cad.png
+src/assets/wsst/tip-sled-cad.png
+src/assets/wsst/pcb-carrier.png
+src/assets/wsst/wire-feeder-prototype.png
+src/assets/wsst/tip-sled-prototype.png
+src/assets/wsst/test-jig-cad.png
+src/assets/wsst/electrical-diagram.png
+src/assets/wsst/software-diagram.png
+src/assets/wsst/alignment-guide.png
+src/assets/wsst/heat-insulation.png
+src/assets/wsst/cog-balancing.png
