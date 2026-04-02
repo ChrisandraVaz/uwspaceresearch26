@@ -30,6 +30,13 @@ import avatarCaleb from "./assets/avatars/Caleb.png";
 
 // Space Sustainability
 import avatarMadison from "./assets/madison-prange.jpg";
+import avatarAnita from "./assets/avatars/Anita.png";
+import avatarKate from "./assets/avatars/Kate.jpeg";
+import avatarGurpreet from "./assets/avatars/Gurpreet.png";
+import avatarDrishti from "./assets/avatars/Drishti.jpg";
+import avatarAidan from "./assets/avatars/Aidan.png";
+import avatarTheria from "./assets/avatars/Theria.jpeg";
+import avatarLakysha from "./assets/avatars/Lakysha.jpeg";
 
 // Alumni avatars
 import avatarEmilia from "./assets/avatars/Emilia.jpg";
@@ -98,15 +105,15 @@ export const astraTeam: Person[] = [
 // Space Sustainability project team
 export const ssTeam: Person[] = [
   { name: "Madison Prange", role: "Project Lead", imageUrl: avatarMadison },
-  { name: "Kate Jessop", role: "Science Lead", placeholder: true },
-  { name: "Drishti Manilall", role: "Science Lead", placeholder: true },
-  { name: "Gurpreet Singh", role: "Industry Partner", placeholder: true },
+  { name: "Kate Jessop", role: "Science Lead", imageUrl: avatarKate },
+  { name: "Drishti Manilall", role: "Science Lead", imageUrl: avatarDrishti },
+  { name: "Gurpreet Singh", role: "Industry Partner", imageUrl: avatarGurpreet },
   { name: "Nikiel Lange", role: "Data Lead", placeholder: true },
-  { name: "Anita Shunbuli", role: "Electrical Member", placeholder: true },
-  { name: "Aidan Schreder", role: "Mech Member", placeholder: true },
+  { name: "Anita Shunbuli", role: "Electrical Member", imageUrl: avatarAnita },
+  { name: "Aidan Schreder", role: "Mech Member", imageUrl: avatarAidan },
   { name: "Anaisha Jain", role: "Mech Member", placeholder: true },
-  { name: "Theria Liu", role: "Operations, Science", placeholder: true },
-  { name: "Lakysha Ramnani", role: "Operations, Science", placeholder: true },
+  { name: "Theria Liu", role: "Operations, Science", imageUrl: avatarTheria },
+  { name: "Lakysha Ramnani", role: "Operations, Science", imageUrl: avatarLakysha },
   { name: "Alex Ng", role: "Operations, Science", placeholder: true },
   { name: "Isabella Lyn", role: "Mechanical Member", placeholder: true },
   { name: "Hazel Bains", role: "Electrical Member", placeholder: true },
