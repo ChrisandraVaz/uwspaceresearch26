@@ -224,7 +224,6 @@ export default function Wsst() {
               src={wsstPayload}
               alt="WSST payload experiment inside Pelican case"
             />
-            <p>The WSST payload assembly inside the Pelican case enclosure</p>
           </div>
         </div>
 
@@ -251,7 +250,6 @@ export default function Wsst() {
               src={wsstMachining}
               alt="WSST team member machining components on a lathe"
             />
-            <p>A team member machining centrifuge components on the lathe</p>
           </div>
         </div>
 
@@ -279,7 +277,6 @@ export default function Wsst() {
               src={wsstElectronics}
               alt="WSST team member working on electronics and wiring"
             />
-            <p>Electronics integration and testing of the control system</p>
           </div>
         </div>
 
@@ -511,7 +508,6 @@ export default function Wsst() {
             src={wsstFalcon20}
             alt="WSST team visiting the NRC Falcon 20 aircraft"
           />
-          <p>The WSST team visiting the NRC Falcon 20 aircraft used for parabolic flight</p>
         </div>
 
         {/* Team */}

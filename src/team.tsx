@@ -79,10 +79,13 @@ const electrical: Person[] = [
   { name: "Rachel", role: "Electrical Designer", imageUrl: avatarRachel },
 ];
 
-const mechanical: Person[] = [
+const mechanicalTop: Person[] = [
   { name: "Jerry", role: "Mech Lead, Mission Specialist #1", imageUrl: avatarJerry },
   { name: "Emma", role: "Mech Designer", imageUrl: avatarEmma },
   { name: "Mysha", role: "Mech Designer, Social Media Lead", imageUrl: avatarMysha },
+];
+
+const mechanicalBottom: Person[] = [
   { name: "Jady", role: "Mech Designer", imageUrl: avatarJady },
   { name: "Adelina", role: "Mech Designer", imageUrl: avatarAdelina },
   { name: "Caleb", role: "Mech Designer", imageUrl: avatarCaleb },
@@ -122,7 +125,8 @@ export const ssTeam: Person[] = [
   { name: "Emily Hoang", role: "Software Member", placeholder: true },
 ];
 
-const alumni: Person[] = [
+// @ts-expect-error keeping alumni data for future use
+const _alumni: Person[] = [
   { name: "Emilia Castillo", role: "Business & Outreach Lead", imageUrl: avatarEmilia },
   { name: "Ryan Mark", role: "Mechanical Lead & Webmaster", imageUrl: avatarRyan },
   { name: "Andre Arroyo-Cottier", role: "Mechanical Designer", imageUrl: avatarAndre },
@@ -183,7 +187,8 @@ export function Team() {
       <Row people={researchAndBusiness} centered />
       <Row people={software} />
       <Row people={electrical} />
-      <Row people={mechanical} />
+      <Row people={mechanicalTop} />
+      <Row people={mechanicalBottom} centered />
     </div>
   );
 }
