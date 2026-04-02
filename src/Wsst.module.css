@@ -1,17 +1,28 @@
 /* === WSST-specific styles === */
 
 /* === LARGER FONT OVERRIDES for WSST page === */
-.wsstPage p {
+/* Exclude team section (pyramid/membercontainer) from font overrides */
+.wsstPage p:not([class*="member"]) {
     font-size: 1rem !important;
     line-height: 1.7;
 }
 
-.wsstPage h3 {
+.wsstPage h3:not([class*="member"]) {
     font-size: 2rem !important;
 }
 
 .wsstPage h5 {
     font-size: 1.15rem !important;
+}
+
+/* Reset team member text to normal sizes */
+.wsstPage :global(.membername) {
+    font-size: 0.95rem !important;
+}
+
+.wsstPage :global(.memberrole) {
+    font-size: 0.72rem !important;
+    line-height: 1.4;
 }
 
 /* Contact banner */
