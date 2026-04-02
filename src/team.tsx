@@ -31,7 +31,7 @@ import avatarCaleb from "./assets/avatars/Caleb.png";
 // Space Sustainability
 import avatarMadison from "./assets/madison-prange.jpg";
 import avatarAnita from "./assets/avatars/Anita.png";
-import avatarKate from "./assets/avatars/Kate.jpeg";
+import avatarKate from "./assets/avatars/kate.jpeg";
 import avatarGurpreet from "./assets/avatars/Gurpreet.png";
 import avatarDrishti from "./assets/avatars/Drishti.jpg";
 import avatarAidan from "./assets/avatars/Aidan.png";
