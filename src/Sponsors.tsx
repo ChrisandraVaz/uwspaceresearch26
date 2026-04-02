@@ -10,11 +10,10 @@ import sedsLogo from "./assets/sponsors/SEDS_Logo.png";
 import uwEngLogo from "./assets/sponsors/UW_Eng_Logo.avif";
 import uwLogo from "./assets/sponsors/UW_Logo_2.avif";
 import weefLogo from "./assets/sponsors/WEEF_Logo.avif";
+import msamLogo from "./assets/sponsors/msam.png";
+import camjLogo from "./assets/sponsors/camj.avif";
 
-// TODO: Add logo files for the following sponsors once available:
-// - Sandford Fleming Foundation (SF) -> add to src/assets/sponsors/
-// - MSAM -> add to src/assets/sponsors/
-// - CAMJ (nano-micro-macro) -> add to src/assets/sponsors/
+// TODO: Add logo file for Sandford Fleming Foundation (SF) once available
 
 const sponsors = [
   { name: "SEDS Canada", logo: sedsLogo },
@@ -26,6 +25,8 @@ const sponsors = [
   { name: "Faculty of Engineering", logo: uwEngLogo, large: true },
   { name: "IEEE Canada", logo: ieeeLogo, large: true },
   { name: "Engineering Society", logo: engsocLogo, large: true },
+  { name: "MSAM", logo: msamLogo },
+  { name: "CAMJ", logo: camjLogo },
 ];
 
 export default function Sponsors() {
