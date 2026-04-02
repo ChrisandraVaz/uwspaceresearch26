@@ -31,16 +31,16 @@ export default function Home() {
           <h1>Our Projects</h1>
         </div>
         <div className={styles.projectscontent}>
-          <Link to="/projects/wsst" className={styles.projectscontenttopbox}>
-            <div className={styles.projectscontenttopbox2}>
-              <h2>WSST</h2>
-              <p>Waterloo Space Soldering Team</p>
-            </div>
-          </Link>
-          <div className={styles.projectscontentbottombox}>
+          <div className={styles.projectsrow}>
+            <Link to="/projects/wsst" className={styles.projectcard}>
+              <div className={styles.projectcardwsst}>
+                <h2>WSST</h2>
+                <p>Waterloo Space Soldering Team</p>
+              </div>
+            </Link>
             <Link
               to="/projects/astra"
-              className={styles.projectscontentbottomleft}
+              className={`${styles.projectcard} ${styles.projectcardastrabg}`}
             >
               <div>
                 <img src={astraText} className={styles.astraTextImg}></img>
@@ -49,7 +49,7 @@ export default function Home() {
             </Link>
             <Link
               to="/projects/space-sustainability"
-              className={styles.projectscontentbottomright}
+              className={`${styles.projectcard} ${styles.projectcardspacesustbg}`}
             >
               <div>
                 <h2>Space Sustainability</h2>

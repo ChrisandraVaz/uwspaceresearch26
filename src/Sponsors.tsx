@@ -8,18 +8,24 @@ import ieeeLogo from "./assets/sponsors/IEEE_Logo.jpg";
 import nrcLogo from "./assets/sponsors/NRC_Logo.png";
 import sedsLogo from "./assets/sponsors/SEDS_Logo.png";
 import uwEngLogo from "./assets/sponsors/UW_Eng_Logo.avif";
-
+import uwLogo from "./assets/sponsors/UW_Logo_2.avif";
 import weefLogo from "./assets/sponsors/WEEF_Logo.avif";
 
+// TODO: Add logo files for the following sponsors once available:
+// - Sandford Fleming Foundation (SF) -> add to src/assets/sponsors/
+// - MSAM -> add to src/assets/sponsors/
+// - CAMJ (nano-micro-macro) -> add to src/assets/sponsors/
+
 const sponsors = [
+  { name: "SEDS Canada", logo: sedsLogo },
+  { name: "WEEF", logo: weefLogo },
   { name: "Altium", logo: altiumLogo },
   { name: "Canadian Space Agency", logo: csaLogo, large: true },
+  { name: "NRC CNRC", logo: nrcLogo },
+  { name: "University of Waterloo", logo: uwLogo, large: true },
+  { name: "Faculty of Engineering", logo: uwEngLogo, large: true },
+  { name: "IEEE Canada", logo: ieeeLogo, large: true },
   { name: "Engineering Society", logo: engsocLogo, large: true },
-  { name: "IEEE", logo: ieeeLogo, large: true },
-  { name: "National Research Council", logo: nrcLogo },
-  { name: "SEDS Canada", logo: sedsLogo },
-  { name: "UW Engineering", logo: uwEngLogo, large: true },
-  { name: "WEEF", logo: weefLogo },
 ];
 
 export default function Sponsors() {

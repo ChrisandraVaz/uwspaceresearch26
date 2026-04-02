@@ -201,15 +201,16 @@ export function TeamGrid({ members }: { members: Person[] }) {
   );
 }
 
-export function Alumni() {
-  return (
-    <div className={styles.membercontainer}>
-      <h3 className={styles.alumniheading}>Alumni</h3>
-      <ul role="list" className={styles.membercontainerli}>
-        {alumni.map((person, i) => (
-          <MemberCard key={i} person={person} />
-        ))}
-      </ul>
-    </div>
-  );
-}
+// Alumni section removed from rendered output
+// export function Alumni() {
+//   return (
+//     <div className={styles.membercontainer}>
+//       <h3 className={styles.alumniheading}>Alumni</h3>
+//       <ul role="list" className={styles.membercontainerli}>
+//         {alumni.map((person, i) => (
+//           <MemberCard key={i} person={person} />
+//         ))}
+//       </ul>
+//     </div>
+//   );
+// }
