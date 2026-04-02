@@ -30,18 +30,6 @@ import avatarCaleb from "./assets/avatars/Caleb.png";
 
 // Space Sustainability
 import avatarMadison from "./assets/madison-prange.jpg";
-import avatarAnita from "./assets/avatars/Anita.jpg";
-import avatarKate from "./assets/avatars/Kate.jpg";
-import avatarGurpreet from "./assets/avatars/Gurpreet.jpg";
-import avatarDrishti from "./assets/avatars/Drishti.jpg";
-import avatarAidan from "./assets/avatars/Aidan.jpg";
-import avatarTheria from "./assets/avatars/Theria.jpg";
-import avatarLakysha from "./assets/avatars/Lakysha.jpg";
-import avatarIsabella from "./assets/avatars/Isabella.jpg";
-import avatarHazel from "./assets/avatars/Hazel.jpg";
-import avatarSydney from "./assets/avatars/Sydney.jpg";
-import avatarKrishJain from "./assets/avatars/KrishJain.jpg";
-import avatarAlex from "./assets/avatars/Alex.jpg";
 
 // Alumni avatars
 import avatarEmilia from "./assets/avatars/Emilia.jpg";
@@ -110,20 +98,20 @@ export const astraTeam: Person[] = [
 // Space Sustainability project team
 export const ssTeam: Person[] = [
   { name: "Madison Prange", role: "Project Lead", imageUrl: avatarMadison },
-  { name: "Kate Jessop", role: "Science Lead", imageUrl: avatarKate },
-  { name: "Drishti Manilall", role: "Science Lead", imageUrl: avatarDrishti },
-  { name: "Gurpreet Singh", role: "Industry Partner", imageUrl: avatarGurpreet },
+  { name: "Kate Jessop", role: "Science Lead", placeholder: true },
+  { name: "Drishti Manilall", role: "Science Lead", placeholder: true },
+  { name: "Gurpreet Singh", role: "Industry Partner", placeholder: true },
   { name: "Nikiel Lange", role: "Data Lead", placeholder: true },
-  { name: "Anita Shunbuli", role: "Electrical Member", imageUrl: avatarAnita },
-  { name: "Aidan Schreder", role: "Mech Member", imageUrl: avatarAidan },
+  { name: "Anita Shunbuli", role: "Electrical Member", placeholder: true },
+  { name: "Aidan Schreder", role: "Mech Member", placeholder: true },
   { name: "Anaisha Jain", role: "Mech Member", placeholder: true },
-  { name: "Theria Liu", role: "Operations, Science", imageUrl: avatarTheria },
-  { name: "Lakysha Ramnani", role: "Operations, Science", imageUrl: avatarLakysha },
-  { name: "Alex Ng", role: "Operations, Science", imageUrl: avatarAlex },
-  { name: "Isabella Lyn", role: "Mechanical Member", imageUrl: avatarIsabella },
-  { name: "Hazel Bains", role: "Electrical Member", imageUrl: avatarHazel },
-  { name: "Sydney Yang", role: "Software Member", imageUrl: avatarSydney },
-  { name: "Krish Jain", role: "Electrical Member", imageUrl: avatarKrishJain },
+  { name: "Theria Liu", role: "Operations, Science", placeholder: true },
+  { name: "Lakysha Ramnani", role: "Operations, Science", placeholder: true },
+  { name: "Alex Ng", role: "Operations, Science", placeholder: true },
+  { name: "Isabella Lyn", role: "Mechanical Member", placeholder: true },
+  { name: "Hazel Bains", role: "Electrical Member", placeholder: true },
+  { name: "Sydney Yang", role: "Software Member", placeholder: true },
+  { name: "Krish Jain", role: "Electrical Member", placeholder: true },
   { name: "Emily Hoang", role: "Software Member", placeholder: true },
 ];
 
