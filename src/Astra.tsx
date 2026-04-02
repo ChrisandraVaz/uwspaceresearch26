@@ -22,10 +22,12 @@ export default function Astra() {
         <div className={styles.intro}>
           <div className={styles.introleft}>
             <p>
-              ASTRA leverages machine learning to actively filters cosmic rays
-              and improves signal transmission, improving future satellite
-              communication and providing a solution to a persistent problem in
-              data transmissions.
+              ASTRA is a student-built experiment focused on improving
+              communication in high-altitude and space environments. Our team
+              developed a system that uses machine learning to filter out noise
+              and improve the clarity of transmitted signals in real-time,
+              creating smarter communication systems that adapt to changing
+              conditions instead of relying only on fixed filtering methods.
             </p>
           </div>
           <div className={styles.introright}>
@@ -49,13 +51,11 @@ export default function Astra() {
             <div className={styles.satellitepic}></div>
 
             <p className={styles.communicationparagraph}>
-              Communication through high altitudes is crucial not only for
-              atmospheric research but also for systems located in space. The
-              harsh conditions of the stratosphere and space, particularly the
-              high exposure to cosmic rays, create challenges for signal
-              transmission and integrity. These rays create noise and disrupt
-              electronic systems causing issues with maintaining reliable
-              communication links.{" "}
+              When signals are transmitted through the atmosphere or in space,
+              they can be disrupted by cosmic radiation and environmental noise,
+              which can degrade the signal and lead to data loss. This is a
+              major challenge for satellite communications, atmospheric research,
+              and future space missions that rely on accurate real-time data.
             </p>
             <div className={styles.personsaffectedcontainer}>
               <h5>
@@ -123,20 +123,29 @@ export default function Astra() {
           <div className={styles.aboutthecompetitioncontent}>
             <h3>About the Competition</h3>
             <p>
-              UW ASTRA is participating in the Canadian Stratospheric Balloon
-              Experiment, a premier competition for Canadian post-secondary
-              students. Organized by SEDS Canada in collaboration with the
-              Canadian Space Agency (CSA), this annual challenge invites
-              students to design, build and test small scientific experiments to
-              be flown aboard high-altitude balloons.<br></br>
-              <br></br>Our team has been selected to design, build, and launch
-              our experiment aboard a high-altitude balloon, reaching up to 35
-              km to test it in near-space conditions.
+              ASTRA was part of the Canadian Stratospheric Balloon Experiment
+              (CAN-SBX), organized by SEDS Canada in collaboration with the
+              Canadian Space Agency. In August 2025, our payload launched from
+              Timmins, Ontario on a high-altitude balloon and reached
+              approximately 27 km above Earth, where we tested our system in
+              near-space conditions.
               <br></br>
               <br></br>For more information, check out the{" "}
               <a href="https://www.seds.ca/can-sbx/" target="_blank">
                 official website.
               </a>
+            </p>
+          </div>
+        </div>
+        <div className={styles.currentstatus}>
+          <div className={styles.currentstatuscontent}>
+            <h3>Current Status</h3>
+            <p>
+              Our team is currently analyzing the flight data and preparing a
+              research paper submitted for the International Astronautical
+              Congress (IAC) 2026. The goal is to share our results and
+              demonstrate how adaptive machine learning techniques could help
+              improve communication systems for future space missions.
             </p>
           </div>
         </div>
