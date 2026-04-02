@@ -69,12 +69,12 @@
     background: #ffffff;
     backdrop-filter: blur(10px);
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 120px;
+    min-height: 160px;
     transition: box-shadow 200ms ease, transform 200ms ease;
 }
 
@@ -85,7 +85,7 @@
 
 .logoCard img {
     max-width: 100%;
-    max-height: 80px;
+    max-height: 120px;
     object-fit: contain;
 }
 
@@ -126,12 +126,12 @@
     }
 
     .logoCard {
-        min-height: 150px;
-        padding: 2.5rem;
+        min-height: 180px;
+        padding: 3rem;
     }
 
     .logoCard img {
-        max-height: 100px;
+        max-height: 140px;
     }
 
     .logoCard.logoCardLarge img {

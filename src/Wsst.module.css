@@ -1,5 +1,100 @@
 /* === WSST-specific styles === */
 
+/* === LARGER FONT OVERRIDES for WSST page === */
+.wsstPage p {
+    font-size: 1rem !important;
+    line-height: 1.7;
+}
+
+.wsstPage h3 {
+    font-size: 2rem !important;
+}
+
+.wsstPage h5 {
+    font-size: 1.15rem !important;
+}
+
+/* Contact banner */
+.contactBanner {
+    background: rgba(101, 64, 211, 0.15);
+    border: 1px solid rgba(101, 64, 211, 0.35);
+    border-radius: 1rem;
+    padding: 1.25rem 2rem;
+    text-align: center;
+    margin: 0 2rem;
+}
+
+.contactBanner p {
+    margin: 0;
+    font-size: 1.05rem !important;
+}
+
+.contactBanner a {
+    color: #a78bfa;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contactBanner a:hover {
+    text-decoration: underline;
+}
+
+/* Long-term goals */
+.longTermGoals {
+    padding: 0 2rem;
+}
+
+.longTermGoals h3 {
+    margin-bottom: 1rem;
+}
+
+.longTermGoals p {
+    margin-bottom: 1rem;
+}
+
+.longTermGoals p:last-child {
+    margin-bottom: 0;
+}
+
+/* Section photos */
+.sectionPhoto {
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.sectionPhoto img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.sectionPhoto p {
+    font-size: 0.85rem !important;
+    margin-top: 0.75rem;
+    opacity: 0.6;
+    color: var(--text-color);
+}
+
+.sectionPhotoWide {
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.sectionPhotoWide img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.sectionPhotoWide p {
+    font-size: 0.85rem !important;
+    margin-top: 0.75rem;
+    opacity: 0.6;
+    color: var(--text-color);
+}
+
 /* Solder comparison images */
 .solderComparison {
     display: grid;
@@ -21,7 +116,7 @@
 }
 
 .solderComparisonItem p {
-    font-size: 0.7rem !important;
+    font-size: 0.8rem !important;
     margin-top: 0.5rem;
     opacity: 0.6;
     color: var(--text-color);
@@ -53,59 +148,13 @@
 .experimentDetailCard h5 {
     margin: 0 0 0.5rem 0;
     font-weight: 600 !important;
-    font-size: 0.9rem !important;
+    font-size: 1.05rem !important;
     color: var(--text-color);
 }
 
 .experimentDetailCard p {
     margin: 0;
     opacity: 0.85;
-}
-
-/* Flight plan table */
-.flightPlan {
-    padding: 0 2rem;
-}
-
-.flightPlan h3 {
-    margin-bottom: 1rem;
-}
-
-.flightTable {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 0.75rem;
-    border-radius: 1rem;
-    overflow: hidden;
-}
-
-.flightTable thead {
-    background: rgba(101, 64, 211, 0.3);
-}
-
-.flightTable th {
-    padding: 0.75rem 1rem;
-    text-align: left;
-    font-weight: 600;
-    font-size: 0.75rem;
-}
-
-.flightTable td {
-    padding: 0.6rem 1rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-.flightTable tbody tr:nth-child(odd) {
-    background: rgba(255, 255, 255, 0.02);
-}
-
-.flightTable tbody tr:nth-child(even) {
-    background: rgba(255, 255, 255, 0.04);
-}
-
-.levelFlight {
-    background: rgba(101, 64, 211, 0.1) !important;
-    font-style: italic;
 }
 
 /* Mechanical design gallery */
@@ -137,13 +186,13 @@
 .designCardContent h5 {
     margin: 0 0 0.5rem 0;
     font-weight: 600 !important;
-    font-size: 0.9rem !important;
+    font-size: 1rem !important;
 }
 
 .designCardContent p {
     margin: 0;
     opacity: 0.8;
-    font-size: 0.75rem !important;
+    font-size: 0.85rem !important;
     line-height: 1.5;
 }
 
@@ -175,49 +224,11 @@
 }
 
 .diagramItem p {
-    font-size: 0.7rem !important;
+    font-size: 0.8rem !important;
     margin-top: 0.5rem;
     opacity: 0.6;
     color: var(--text-color);
     text-align: center;
-}
-
-/* Prototyping section */
-.prototypingGallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-}
-
-.prototypeCard {
-    border-radius: 1rem;
-    overflow: hidden;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-.prototypeCard img {
-    width: 100%;
-    height: 220px;
-    object-fit: contain;
-    background: linear-gradient(135deg, #f0f0f0 0%, #ddd 100%);
-}
-
-.prototypeCardContent {
-    padding: 1rem 1.25rem;
-}
-
-.prototypeCardContent h5 {
-    margin: 0 0 0.4rem 0;
-    font-weight: 600 !important;
-    font-size: 0.85rem !important;
-}
-
-.prototypeCardContent p {
-    margin: 0;
-    opacity: 0.8;
-    font-size: 0.75rem !important;
-    line-height: 1.5;
 }
 
 /* Power budget stats */
@@ -244,36 +255,9 @@
 }
 
 .powerStat span {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     opacity: 0.6;
     color: var(--text-color);
-}
-
-/* Mass budget */
-.massBudget {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.75rem;
-    margin-top: 1rem;
-}
-
-.massItem {
-    border-radius: 0.75rem;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    padding: 0.75rem;
-    text-align: center;
-}
-
-.massItem h4 {
-    margin: 0;
-    font-size: 1.2rem;
-    font-weight: 700;
-}
-
-.massItem span {
-    font-size: 0.65rem;
-    opacity: 0.6;
 }
 
 /* Design challenges */
@@ -296,7 +280,7 @@
 .challengeCard h5 {
     margin: 0;
     font-weight: 700 !important;
-    font-size: 0.95rem !important;
+    font-size: 1.1rem !important;
     color: var(--text-color);
 }
 
@@ -309,7 +293,7 @@
 .challengeLabel {
     font-weight: 600;
     color: #a78bfa;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
@@ -322,136 +306,6 @@
     background: linear-gradient(135deg, #e8ecf0 0%, #d0d5db 100%);
     padding: 0.5rem;
     margin-top: 0.25rem;
-}
-
-/* Flight procedures */
-.proceduresSection {
-    padding: 0 2rem;
-}
-
-.proceduresSection h3 {
-    margin-bottom: 1rem;
-}
-
-.procedureSteps {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.procedurePhase {
-    border-radius: 1rem;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    overflow: hidden;
-}
-
-.procedurePhaseHeader {
-    background: rgba(101, 64, 211, 0.2);
-    padding: 0.75rem 1.25rem;
-    font-weight: 600;
-    font-size: 0.9rem;
-}
-
-.procedurePhaseContent {
-    padding: 1rem 1.25rem;
-}
-
-.procedurePhaseContent img {
-    width: 100%;
-    border-radius: 0.75rem;
-    background: white;
-    padding: 0.25rem;
-}
-
-.procedurePhaseContent ol {
-    margin: 0;
-    padding-left: 1.25rem;
-}
-
-.procedurePhaseContent ol li {
-    margin-bottom: 0.4rem;
-    font-size: 0.8rem;
-    opacity: 0.85;
-}
-
-/* Power budget table */
-.powerTable {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 0.75rem;
-    border-radius: 1rem;
-    overflow: hidden;
-    margin-top: 1rem;
-}
-
-.powerTable thead {
-    background: rgba(101, 64, 211, 0.3);
-}
-
-.powerTable th {
-    padding: 0.6rem 0.75rem;
-    text-align: left;
-    font-weight: 600;
-    font-size: 0.7rem;
-}
-
-.powerTable td {
-    padding: 0.5rem 0.75rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-.powerTable tbody tr:nth-child(odd) {
-    background: rgba(255, 255, 255, 0.02);
-}
-
-.powerTable tbody tr:nth-child(even) {
-    background: rgba(255, 255, 255, 0.04);
-}
-
-.powerTable tfoot {
-    background: rgba(101, 64, 211, 0.15);
-    font-weight: 600;
-}
-
-.powerTable tfoot td {
-    padding: 0.6rem 0.75rem;
-    border-bottom: none;
-}
-
-/* Science Traceability Matrix table */
-.stmTable {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 0.7rem;
-    border-radius: 1rem;
-    overflow: hidden;
-    margin-top: 1rem;
-}
-
-.stmTable thead {
-    background: rgba(101, 64, 211, 0.3);
-}
-
-.stmTable th {
-    padding: 0.6rem 0.75rem;
-    text-align: left;
-    font-weight: 600;
-    font-size: 0.65rem;
-}
-
-.stmTable td {
-    padding: 0.5rem 0.75rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-    vertical-align: top;
-}
-
-.stmTable tbody tr:nth-child(odd) {
-    background: rgba(255, 255, 255, 0.02);
-}
-
-.stmTable tbody tr:nth-child(even) {
-    background: rgba(255, 255, 255, 0.04);
 }
 
 /* Ground test phases */
@@ -473,7 +327,7 @@
     background: rgba(101, 64, 211, 0.2);
     padding: 0.75rem 1.25rem;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 1.05rem;
 }
 
 .groundTestCardContent {
@@ -504,7 +358,7 @@
 }
 
 .nextStepNumber {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: 700;
     color: #a78bfa;
     flex-shrink: 0;
@@ -522,6 +376,46 @@
 
 /* Desktop overrides */
 @media (min-width: 1000px) {
+    .wsstPage p {
+        font-size: 1.1rem !important;
+    }
+
+    .wsstPage h3 {
+        font-size: 2.25rem !important;
+    }
+
+    .wsstPage h5 {
+        font-size: 1.25rem !important;
+    }
+
+    .contactBanner {
+        margin: 0;
+    }
+
+    .contactBanner p {
+        font-size: 1.15rem !important;
+    }
+
+    .longTermGoals {
+        padding: 0;
+    }
+
+    .sectionPhoto {
+        padding: 0;
+    }
+
+    .sectionPhoto img {
+        max-height: 500px;
+    }
+
+    .sectionPhotoWide {
+        padding: 0 8rem;
+    }
+
+    .sectionPhotoWide img {
+        max-height: 550px;
+    }
+
     .solderComparison {
         grid-template-columns: 1fr 1fr;
         max-width: 600px;
@@ -540,10 +434,6 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .flightPlan {
-        padding: 0;
-    }
-
     .designGallery {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -560,10 +450,6 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    .prototypingGallery {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
     .powerStats {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -576,18 +462,6 @@
     .challengeCard {
         flex: 1;
         min-width: 300px;
-    }
-
-    .proceduresSection {
-        padding: 0;
-    }
-
-    .procedureSteps {
-        flex-direction: row;
-    }
-
-    .procedurePhase {
-        flex: 1;
     }
 
     .groundTestGrid {

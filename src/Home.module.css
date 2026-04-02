@@ -119,41 +119,50 @@
     mix-blend-mode: plus-lighter;
 }
 
-.projectscontenttopbox {
-
-    flex: 2 0 auto;
-    border-radius: 2rem;
+.projectsrow {
     display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
     flex-direction: column;
-    padding: 2rem;
+}
 
-    background-image: url("./assets/wsst bg.png");
+.projectcard {
+    flex: 1 1 0%;
+    border-radius: 2rem;
+    padding: 2rem;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     transition-duration: 200ms;
+    display: flex;
+    flex-direction: column;
 }
 
-.projectscontenttopbox:hover {
+.projectcard:hover {
     box-shadow: 0 0 10px 0 #E168FF, 0 0 15px 0 #E168FF;
     mix-blend-mode: linear_dodge;
 }
 
-.projectscontenttopbox2 p {
+.projectcardwsst {
+    display: flex;
+    flex-direction: column;
+}
+
+.projectcardwsst p {
     align-self: flex-end;
     text-align: right;
 }
 
-.projectscontenttopbox2 img {
-    width: 100%;
+.projectcard:first-child {
+    background-image: url("./assets/wsst bg.png");
+}
 
-    /* prevents overflow */
-    height: auto;
-    /* maintain aspect ratio */
-    display: block;
-    /* removes bottom spacing */
-    mix-blend-mode: plus-lighter;
+.projectcardastrabg {
+    background-image: url("./assets/astra bg.png");
+}
+
+.projectcardspacesustbg {
+    background-image: url("./assets/all projects bg.png");
 }
 
 .astraTextImg {
@@ -163,48 +172,8 @@
     mix-blend-mode: plus-lighter;
 }
 
-.projectscontentbottombox {
-    flex: 1 1 0%;
-    display: flex;
-    justify-content: space-evenly;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-.projectscontentbottomleft {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    background-image: url("./assets/astra bg.png");
-}
-
-.projectscontentbottomleft:hover,
-.projectscontentbottomright:hover {
-    box-shadow: 0 0 10px 0 #E168FF, 0 0 15px 0 #E168FF;
-    mix-blend-mode: linear_dodge;
-}
-
-.projectscontentbottomright {
-    background-image: url("./assets/all projects bg.png");
-
-}
-
-.projectscontentbottomleft,
-.projectscontentbottomright {
-    flex: 1 1 0%;
-    border-radius: 2rem;
-    padding: 2rem 2rem;
-    max-width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    transition-duration: 200ms;
-}
-
-.projectscontentbottomleft p,
-.projectscontentbottomleft h2 {
+.projectcardastrabg p,
+.projectcardastrabg h2 {
     margin: 0;
 }
 
@@ -225,7 +194,6 @@
 }
 
 .seeallprojects:hover {
-    box-shadow: 0 0 10px 0 #E168FF, 0 0 15px 0 #E168FF;
 }
 
 
@@ -252,11 +220,11 @@
         padding: 0 2rem;
     }
 
-    .projectscontentbottombox {
+    .projectsrow {
         flex-direction: row;
     }
 
-    .projectscontentbottomleft {
+    .projectcardastrabg {
         flex-wrap: nowrap;
         gap: 1rem;
     }

@@ -1,7 +1,6 @@
 import styles from "./About.module.css";
 
 import Footer from "./footer.tsx";
-import { Alumni } from "./team.tsx";
 
 import wsrtLogoL from "./assets/wsrt large icon.png";
 import linkedInLogo from "./assets/linkedin.svg";
@@ -89,7 +88,6 @@ export default function About() {
             ASTRA Team
           </Link>
         </div>
-        <Alumni />
       </div>
       <Footer />
     </>
