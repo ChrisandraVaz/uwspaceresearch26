@@ -69,13 +69,14 @@
     background: #ffffff;
     backdrop-filter: blur(10px);
     border-radius: 1rem;
-    padding: 3rem;
+    padding: 0.75rem;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 200px;
+    aspect-ratio: 2 / 1;
     transition: box-shadow 200ms ease, transform 200ms ease;
+    overflow: hidden;
 }
 
 .logoCard:hover {
@@ -84,11 +85,9 @@
 }
 
 .logoCard img {
-    max-width: 85%;
-    max-height: none;
-    height: auto;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: contain;
-    transform: scale(1.3);
 }
 
 .contact {
@@ -118,13 +117,16 @@
     }
 
     .logoCard {
-        min-height: 220px;
-        padding: 3.5rem;
+        padding: 1rem;
     }
 
     .logoCard img {
-        max-height: none;
-        transform: scale(1.4);
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .logoCardLarge {
+        grid-column: span 2;
     }
 
     .contact {
