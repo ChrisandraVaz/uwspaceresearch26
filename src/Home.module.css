@@ -81,17 +81,16 @@
 
     min-height: 70vh;
     display: flex;
+    flex-direction: column;
     padding: 3rem 2rem;
-    flex-wrap: wrap;
     align-items: stretch;
     color: var(--text-color);
 }
 
 
 .projectsheader {
-    flex: 1 0 auto;
-    padding: 1rem 2rem;
-    align-self: stretch;
+    flex: 0 0 auto;
+    padding: 0 0 1.5rem 0;
 }
 
 .projectsheader h1 {
@@ -103,9 +102,6 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    min-width: 40vw;
-    align-self: auto;
-    height: auto;
 }
 
 .projectscontent h2 {
@@ -136,6 +132,9 @@
     transition-duration: 200ms;
     display: flex;
     flex-direction: column;
+    min-height: 200px;
+    min-width: 0;
+    overflow: hidden;
 }
 
 .projectcard:hover {
@@ -196,11 +195,10 @@
 .seeallprojects:hover {
 }
 
+/* No separate mobile override needed */
+
 
 @media (min-width: 626px) {
-    .projectsheader h1 {
-        text-align: left;
-    }
 }
 
 @media (min-width: 1000px) {
@@ -212,21 +210,29 @@
 
     .projectscontainer {
         padding: 5rem 8rem;
-        min-height: 105vh;
     }
 
     .projectsheader {
-        flex: 0 0 30%;
-        padding: 0 2rem;
+        padding: 0 0 2rem 0;
+    }
+
+    .projectsheader h1 {
+        text-align: left;
     }
 
     .projectsrow {
         flex-direction: row;
+        flex-wrap: nowrap;
+        height: 300px;
     }
 
     .projectcardastrabg {
         flex-wrap: nowrap;
         gap: 1rem;
+    }
+
+    .seeallprojects {
+        align-self: flex-end;
     }
 }
 
