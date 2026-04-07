@@ -1,5 +1,32 @@
 /* === WSST-specific styles === */
-/* Inherit base font sizes from Astra.module.css — no overrides */
+
+/* Bump up text on WSST page, but leave team member section alone */
+.wsstPage p:not([class*="member"]) {
+    font-size: 0.95rem !important;
+    line-height: 1.65;
+}
+
+.wsstPage h3:not([class*="member"]) {
+    font-size: 1.75rem !important;
+}
+
+.wsstPage h5:not([class*="member"]) {
+    font-size: 1.05rem !important;
+}
+
+@media (min-width: 1000px) {
+    .wsstPage p:not([class*="member"]) {
+        font-size: 1.05rem !important;
+    }
+
+    .wsstPage h3:not([class*="member"]) {
+        font-size: 2rem !important;
+    }
+
+    .wsstPage h5:not([class*="member"]) {
+        font-size: 1.15rem !important;
+    }
+}
 
 /* Contact banner */
 .contactBanner {
