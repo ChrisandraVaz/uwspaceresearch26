@@ -3,26 +3,29 @@
 /* === LARGER FONT OVERRIDES for WSST page === */
 /* Exclude team section (pyramid/membercontainer) from font overrides */
 .wsstPage p:not([class*="member"]) {
-    font-size: 1rem !important;
-    line-height: 1.7;
+    font-size: 0.95rem !important;
+    line-height: 1.65;
 }
 
 .wsstPage h3:not([class*="member"]) {
-    font-size: 2rem !important;
+    font-size: 1.75rem !important;
 }
 
-.wsstPage h5 {
-    font-size: 1.15rem !important;
+.wsstPage h5:not([class*="member"]) {
+    font-size: 1.05rem !important;
 }
 
 /* Reset team member text to normal sizes */
-.wsstPage :global(.membername) {
-    font-size: 0.95rem !important;
+.wsstPage :global(.membername),
+.wsstPage [class*="membername"] {
+    font-size: 0.9rem !important;
+    line-height: 1.3 !important;
 }
 
-.wsstPage :global(.memberrole) {
-    font-size: 0.72rem !important;
-    line-height: 1.4;
+.wsstPage :global(.memberrole),
+.wsstPage [class*="memberrole"] {
+    font-size: 0.7rem !important;
+    line-height: 1.4 !important;
 }
 
 /* Contact banner */
@@ -387,16 +390,16 @@
 
 /* Desktop overrides */
 @media (min-width: 1000px) {
-    .wsstPage p {
+    .wsstPage p:not([class*="member"]) {
+        font-size: 1rem !important;
+    }
+
+    .wsstPage h3:not([class*="member"]) {
+        font-size: 2rem !important;
+    }
+
+    .wsstPage h5:not([class*="member"]) {
         font-size: 1.1rem !important;
-    }
-
-    .wsstPage h3 {
-        font-size: 2.25rem !important;
-    }
-
-    .wsstPage h5 {
-        font-size: 1.25rem !important;
     }
 
     .contactBanner {
