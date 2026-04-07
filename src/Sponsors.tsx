@@ -12,8 +12,7 @@ import uwLogo from "./assets/sponsors/UW_Logo_2.avif";
 import weefLogo from "./assets/sponsors/WEEF_Logo.avif";
 import msamLogo from "./assets/sponsors/msam.png";
 import camjLogo from "./assets/sponsors/camj.avif";
-
-// TODO: Add logo file for Sandford Fleming Foundation (SF) once available
+import sffLogo from "./assets/sponsors/sff.jpg";
 
 const sponsors = [
   { name: "SEDS Canada", logo: sedsLogo },
@@ -27,6 +26,7 @@ const sponsors = [
   { name: "Engineering Society", logo: engsocLogo, large: true },
   { name: "MSAM", logo: msamLogo },
   { name: "CAMJ", logo: camjLogo },
+  { name: "Sandford Fleming Foundation", logo: sffLogo, large: true },
 ];
 
 export default function Sponsors() {
