@@ -90,6 +90,11 @@
     object-fit: contain;
 }
 
+.logoCard img[alt="Sandford Fleming Foundation"] {
+    max-width: 55%;
+    max-height: 75%;
+}
+
 .contact {
     color: var(--text-color);
     text-align: center;
