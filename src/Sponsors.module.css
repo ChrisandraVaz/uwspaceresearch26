@@ -125,9 +125,6 @@
         max-height: 100%;
     }
 
-    .logoCardLarge {
-        grid-column: span 2;
-    }
 
     .contact {
         padding: 3rem 8rem;
