@@ -461,7 +461,7 @@ export default function Wsst2024() {
      </div>
      <div className={w24.carousel}>
       <div className={w24.carouselTrack}>
-       {[...carouselImages.slice(0, 14), ...carouselImages.slice(0, 14)].map((src, i) => (
+       {[...carouselImages.slice(0, 10), ...carouselImages.slice(0, 10)].map((src, i) => (
         <div className={w24.carouselItem} key={`a${i}`}>
          <img src={src} alt="" loading="lazy" />
         </div>
@@ -470,8 +470,17 @@ export default function Wsst2024() {
      </div>
      <div className={w24.carousel}>
       <div className={`${w24.carouselTrack} ${w24.carouselTrackReverse}`}>
-       {[...carouselImages.slice(14), ...carouselImages.slice(14)].map((src, i) => (
+       {[...carouselImages.slice(10, 19), ...carouselImages.slice(10, 19)].map((src, i) => (
         <div className={w24.carouselItem} key={`b${i}`}>
+         <img src={src} alt="" loading="lazy" />
+        </div>
+       ))}
+      </div>
+     </div>
+     <div className={w24.carousel}>
+      <div className={`${w24.carouselTrack} ${w24.carouselTrackSlow}`}>
+       {[...carouselImages.slice(19), ...carouselImages.slice(19)].map((src, i) => (
+        <div className={w24.carouselItem} key={`c${i}`}>
          <img src={src} alt="" loading="lazy" />
         </div>
        ))}
