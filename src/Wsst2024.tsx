@@ -13,6 +13,8 @@ import solderLowVoid from "./assets/wsst/solder-low-void.jpg";
 import solderHighVoid from "./assets/wsst/solder-high-void.jpg";
 
 // 2023-2024 project photos
+import imgTeamFalcon from "./assets/wsst2024/team-falcon20.jpg";
+import imgTeamCSA from "./assets/wsst2024/team-csa.jpg";
 import imgCentrifuge from "./assets/wsst2024/centrifuge-assembly.png";
 import imgCentrifugeFinal from "./assets/wsst2024/centrifuge-final.png";
 import imgModule from "./assets/wsst2024/centrifuge-module-build.jpg";
@@ -405,6 +407,29 @@ export default function Wsst2024() {
               </a>
             </p>
           </div>
+        </div>
+
+        {/* Team photo */}
+        <div className={w24.heroPhoto}>
+          <img
+            src={imgTeamFalcon}
+            alt="WSST 2023-2024 team in front of the NRC Falcon 20 with the SEDS Canada banner"
+          />
+          <p className={w24.caption}>
+            The 2023-2024 team in front of the NRC Falcon 20 after the
+            CAN-RGX flight campaign.
+          </p>
+        </div>
+
+        <div className={w24.heroPhoto}>
+          <img
+            src={imgTeamCSA}
+            alt="WSST 2023-2024 team at Canadian Space Agency headquarters"
+          />
+          <p className={w24.caption}>
+            The team at Canadian Space Agency headquarters in Longueuil,
+            Quebec.
+          </p>
         </div>
 
         {/* Team */}
