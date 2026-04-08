@@ -13,7 +13,6 @@ import solderLowVoid from "./assets/wsst/solder-low-void.jpg";
 import solderHighVoid from "./assets/wsst/solder-high-void.jpg";
 
 // 2023-2024 project photos
-import imgTeam from "./assets/wsst2024/team-waterloo.png";
 import imgCentrifuge from "./assets/wsst2024/centrifuge-assembly.png";
 import imgCentrifugeFinal from "./assets/wsst2024/centrifuge-final.png";
 import imgModule from "./assets/wsst2024/centrifuge-module-build.jpg";
@@ -406,18 +405,6 @@ export default function Wsst2024() {
               </a>
             </p>
           </div>
-        </div>
-
-        {/* Team photo */}
-        <div className={w24.heroPhoto}>
-          <img
-            src={imgTeam}
-            alt="WSST 2023-2024 team in front of the Waterloo Engineering sign"
-          />
-          <p className={w24.caption}>
-            The 2023-2024 team with the payload case outside Waterloo
-            Engineering.
-          </p>
         </div>
 
         {/* Team */}
