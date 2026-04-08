@@ -1,7 +1,22 @@
 .projectscontainer {
     color: var(--text-color);
-    margin-top: 5rem;
-    padding: 2rem 2rem;
+    margin-top: 6rem;
+    padding: 2rem;
+}
+
+.projectstitle {
+    margin-bottom: 2.5rem;
+}
+
+.projectstitle h1 {
+    margin-bottom: 0.75rem;
+}
+
+.projectstitle p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.75);
+    max-width: 60ch;
+    line-height: 1.55;
 }
 
 .allprojectscontainer {
@@ -75,11 +90,12 @@
 
 @media (min-width: 1024px) {
     .projectscontainer {
+        margin-top: 8rem;
         padding: 3rem 8rem;
     }
 
     .projectstitle {
-        margin-bottom: 3rem;
+        margin-bottom: 3.5rem;
     }
 
     #singleprojectcontainer {
