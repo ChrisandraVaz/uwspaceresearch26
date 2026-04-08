@@ -414,40 +414,64 @@ export default function Wsst2024() {
     </div>
 
     {/* Competition */}
-    <div className={styles.aboutthecompetition}>
-     <div className={styles.aboutthecompetitioncontent}>
-      <h3>About the Competition</h3>
+    <div className={w24.competitionSection}>
+     <div className={w24.competitionHeader}>
+      <span className={w24.competitionEyebrow}>The Competition</span>
+      <h3>CAN-RGX</h3>
       <p>
-       CAN-RGX (Canadian Reduced Gravity Experiment) is a premier
-       reduced-gravity experiment competition for Canadian
-       post-secondary students. Organized by SEDS Canada in partnership
-       with the Canadian Space Agency and the National Research
-       Council, the program invites student teams to design, build,
-       and fly experiments aboard the NRC's modified Falcon 20
-       aircraft.
-       <br />
-       <br />
-       WSST's inaugural team was selected for CAN-RGX and flew the
-       centrifuge soldering experiment in July 2024 from Longueuil,
-       Quebec. Each parabola delivered 20-30 seconds of microgravity
-       for the experiment to execute its autonomous mission profile.
-       <br />
-       <br />
-       For more information, check out the{" "}
-       <a href="https://www.seds.ca/can-rgx/" target="_blank">
-        official website.
-       </a>
+       The Canadian Reduced Gravity Experiment is the premier
+       parabolic-flight research competition for Canadian
+       post-secondary students.
       </p>
      </div>
+
+     <div className={w24.competitionGrid}>
+      <div className={w24.competitionCard}>
+       <h4>Organized by</h4>
+       <p>SEDS Canada, in partnership with the Canadian Space Agency and the National Research Council.</p>
+      </div>
+      <div className={w24.competitionCard}>
+       <h4>Aircraft</h4>
+       <p>The NRC's modified Falcon 20 jet, flying parabolic profiles out of Longueuil, Quebec.</p>
+      </div>
+      <div className={w24.competitionCard}>
+       <h4>Microgravity</h4>
+       <p>Each parabola delivers 20-30 seconds of weightlessness for the autonomous mission profile to run.</p>
+      </div>
+      <div className={w24.competitionCard}>
+       <h4>WSST's flight</h4>
+       <p>WSST's inaugural team was selected for CAN-RGX and flew the centrifuge soldering experiment in July 2024.</p>
+      </div>
+     </div>
+
+     <a
+      className={w24.competitionLink}
+      href="https://www.seds.ca/can-rgx/"
+      target="_blank"
+     >
+      Visit the official CAN-RGX site →
+     </a>
     </div>
 
-    {/* Infinite scrolling carousel */}
+    {/* Infinite scrolling carousel - dual-row */}
     <div className={w24.carouselSection}>
-     <h3>Moments from the Build</h3>
+     <div className={w24.carouselHeader}>
+      <h3>Moments from the Build</h3>
+      <p>From first prototypes in the lab to flight day in Quebec.</p>
+     </div>
      <div className={w24.carousel}>
       <div className={w24.carouselTrack}>
-       {[...carouselImages, ...carouselImages].map((src, i) => (
-        <div className={w24.carouselItem} key={i}>
+       {[...carouselImages.slice(0, 14), ...carouselImages.slice(0, 14)].map((src, i) => (
+        <div className={w24.carouselItem} key={`a${i}`}>
+         <img src={src} alt="" loading="lazy" />
+        </div>
+       ))}
+      </div>
+     </div>
+     <div className={w24.carousel}>
+      <div className={`${w24.carouselTrack} ${w24.carouselTrackReverse}`}>
+       {[...carouselImages.slice(14), ...carouselImages.slice(14)].map((src, i) => (
+        <div className={w24.carouselItem} key={`b${i}`}>
          <img src={src} alt="" loading="lazy" />
         </div>
        ))}

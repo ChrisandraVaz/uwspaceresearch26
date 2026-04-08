@@ -188,29 +188,46 @@
     }
 }
 
-/* Infinite carousel */
+/* Infinite carousel - dual row */
 .carouselSection {
     margin: 3rem 0;
+    padding: 0;
 }
 
-.carouselSection h3 {
+.carouselHeader {
     text-align: center;
     margin-bottom: 1.5rem;
+    padding: 0 1rem;
+}
+
+.carouselHeader h3 {
+    margin: 0 0 0.5rem 0;
+}
+
+.carouselHeader p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.95rem;
 }
 
 .carousel {
     width: 100%;
     overflow: hidden;
     position: relative;
-    -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
-    mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+    margin-bottom: 1rem;
 }
 
 .carouselTrack {
     display: flex;
     gap: 1rem;
     width: max-content;
-    animation: carouselScroll 90s linear infinite;
+    animation: carouselScroll 70s linear infinite;
+}
+
+.carouselTrackReverse {
+    animation: carouselScrollReverse 80s linear infinite;
 }
 
 .carousel:hover .carouselTrack {
@@ -219,12 +236,17 @@
 
 .carouselItem {
     flex: 0 0 auto;
-    width: 220px;
-    height: 150px;
+    width: 200px;
+    height: 140px;
     border-radius: 0.75rem;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.04);
     border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: transform 300ms ease;
+}
+
+.carouselItem:hover {
+    transform: scale(1.04);
 }
 
 .carouselItem img {
@@ -239,26 +261,142 @@
     to { transform: translateX(-50%); }
 }
 
+@keyframes carouselScrollReverse {
+    from { transform: translateX(-50%); }
+    to { transform: translateX(0); }
+}
+
+/* Competition section */
+.competitionSection {
+    margin: 4rem 0;
+    padding: 2rem 1.5rem;
+    background: linear-gradient(160deg, rgba(195, 110, 226, 0.08) 0%, rgba(195, 110, 226, 0.02) 60%, transparent 100%);
+    border: 1px solid rgba(195, 110, 226, 0.18);
+    border-radius: 1.5rem;
+}
+
+.competitionHeader {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.competitionEyebrow {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #e8c8f4;
+    background: rgba(195, 110, 226, 0.15);
+    border: 1px solid rgba(195, 110, 226, 0.4);
+    padding: 0.35rem 0.8rem;
+    border-radius: 999px;
+    margin-bottom: 0.75rem;
+}
+
+.competitionHeader h3 {
+    margin: 0 0 0.75rem 0;
+}
+
+.competitionHeader p {
+    margin: 0 auto;
+    max-width: 55ch;
+    color: rgba(255, 255, 255, 0.78);
+    line-height: 1.6;
+}
+
+.competitionGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 1.75rem;
+}
+
+.competitionCard {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1rem;
+    padding: 1.25rem 1.25rem;
+    transition: border-color 250ms ease, transform 250ms ease;
+}
+
+.competitionCard:hover {
+    border-color: rgba(195, 110, 226, 0.4);
+    transform: translateY(-2px);
+}
+
+.competitionCard h4 {
+    margin: 0 0 0.5rem 0;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #e8c8f4;
+}
+
+.competitionCard p {
+    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.competitionLink {
+    display: inline-block;
+    padding: 0.7rem 1.25rem;
+    border-radius: 999px;
+    background: rgba(195, 110, 226, 0.18);
+    border: 1px solid rgba(195, 110, 226, 0.5);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background 250ms ease, transform 250ms ease;
+}
+
+.competitionLink:hover {
+    background: rgba(195, 110, 226, 0.3);
+    transform: translateY(-2px);
+}
+
 @media (min-width: 640px) {
     .carouselItem {
-        width: 280px;
-        height: 190px;
+        width: 260px;
+        height: 175px;
     }
     .carouselTrack {
+        gap: 1.25rem;
+    }
+    .competitionSection {
+        padding: 3rem 2.5rem;
+    }
+    .competitionGrid {
+        grid-template-columns: repeat(2, 1fr);
         gap: 1.25rem;
     }
 }
 
 @media (min-width: 1024px) {
     .carouselSection {
-        margin: 4rem 0;
+        margin: 5rem 0;
     }
     .carouselItem {
-        width: 340px;
-        height: 230px;
+        width: 320px;
+        height: 215px;
     }
     .carouselTrack {
         gap: 1.5rem;
+    }
+    .competitionSection {
+        margin: 5rem 0;
+        padding: 3.5rem 3rem;
+        border-radius: 2rem;
+    }
+    .competitionGrid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+    }
+    .competitionCard {
+        padding: 1.5rem 1.5rem;
     }
 }
 
