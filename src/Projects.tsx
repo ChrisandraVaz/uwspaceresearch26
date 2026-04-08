@@ -19,7 +19,7 @@ export default function Projects() {
               id={styles.singleprojectcontainer}
             >
               <div className={styles.containerleft}>
-                <h1>WSST</h1>
+                <h1>WSST 2025-2026</h1>
                 <p>Waterloo Space Soldering Team</p>
               </div>
               <div className={styles.containerright}>
