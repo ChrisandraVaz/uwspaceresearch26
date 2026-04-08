@@ -125,6 +125,21 @@ export const ssTeam: Person[] = [
   { name: "Emily Hoang", role: "Software Member", placeholder: true },
 ];
 
+// WSST 2023-2024 project team (CAN-RGX, flew July 2024)
+export const wsst2024Team: Person[] = [
+  { name: "Megan Chang", role: "Team Lead", imageUrl: avatarMegan },
+  { name: "Devshi Perera", role: "Project Manager", imageUrl: avatarDevshi },
+  { name: "Ryan Mark", role: "Mechanical Lead", imageUrl: avatarRyan },
+  { name: "Mysha Hamid", role: "Mechanical Designer", imageUrl: avatarMysha },
+  { name: "Andre Arroyo-Cottier", role: "Mechanical Designer", imageUrl: avatarAndre },
+  { name: "Lili Strong", role: "Electrical Lead", imageUrl: avatarLili },
+  { name: "Sameek Sharma", role: "Electrical Designer", imageUrl: avatarSameek },
+  { name: "Nathan Bellsmith", role: "Electrical Designer", imageUrl: avatarNathan },
+  { name: "Relja Vojvodic", role: "Software Lead", imageUrl: avatarRelja },
+  { name: "Asmi Gujral", role: "Software Designer", imageUrl: avatarAsmi },
+  { name: "Emilia Castillo", role: "Business & Outreach Lead", imageUrl: avatarEmilia },
+];
+
 // @ts-expect-error keeping alumni data for future use
 const _alumni: Person[] = [
   { name: "Emilia Castillo", role: "Business & Outreach Lead", imageUrl: avatarEmilia },

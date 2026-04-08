@@ -43,6 +43,21 @@ export default function Projects() {
               </div>
             </div>
           </Link>
+          <Link to="/projects/wsst-2024">
+            <div
+              className={styles.wsstcontainer}
+              id={styles.singleprojectcontainer}
+            >
+              <div className={styles.containerleft}>
+                <h1>WSST 2023-2024</h1>
+                <p>Waterloo Space Soldering Team (inaugural)</p>
+              </div>
+              <div className={styles.containerright}>
+                <p>Sept 2023 - July 2024</p>
+                <p>CAN-RGX</p>
+              </div>
+            </div>
+          </Link>
           <Link to="/projects/space-sustainability">
             <div
               className={styles.sscontainer}

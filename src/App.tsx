@@ -7,6 +7,7 @@ import Projects from "./Projects";
 import Navbar from "./Navbar";
 import Astra from "./Astra";
 import Wsst from "./Wsst";
+import Wsst2024 from "./Wsst2024";
 import Sponsors from "./Sponsors";
 import SpaceSustainability from "./SpaceSustainability";
 import ErrorPage from "./404";
@@ -28,6 +29,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/astra" element={<Astra />} />
           <Route path="/projects/wsst" element={<Wsst />} />
+          <Route path="/projects/wsst-2024" element={<Wsst2024 />} />
           <Route path="/projects/space-sustainability" element={<SpaceSustainability />} />
           <Route path="/sponsors" element={<Sponsors />} />
         </Routes>
