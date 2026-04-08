@@ -240,8 +240,8 @@
 
 .carouselItem {
     flex: 0 0 auto;
-    width: 200px;
-    height: 140px;
+    width: 160px;
+    height: 112px;
     border-radius: 0.75rem;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.04);

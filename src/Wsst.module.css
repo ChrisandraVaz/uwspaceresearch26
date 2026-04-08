@@ -33,9 +33,9 @@
     background: rgba(101, 64, 211, 0.15);
     border: 1px solid rgba(101, 64, 211, 0.35);
     border-radius: 1rem;
-    padding: 1.25rem 2rem;
+    padding: 1.25rem 1.25rem;
     text-align: center;
-    margin: 0 2rem;
+    margin: 0 1rem;
 }
 
 .contactBanner p {
@@ -78,7 +78,7 @@
 
 .sectionPhoto img {
     width: 100%;
-    max-height: 400px;
+    max-height: 260px;
     object-fit: cover;
     border-radius: 1rem;
 }
@@ -97,7 +97,7 @@
 
 .sectionPhotoWide img {
     width: 100%;
-    max-height: 450px;
+    max-height: 280px;
     object-fit: cover;
     border-radius: 1rem;
 }

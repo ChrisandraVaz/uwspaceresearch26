@@ -10,7 +10,7 @@
 }
 
 .projectstitle h1 {
-    font-size: 2.5rem;
+    font-size: clamp(1.75rem, 6vw, 2.5rem);
     margin-bottom: 0.75rem;
     line-height: 1.05;
 }
@@ -85,7 +85,7 @@
 
 .containerleft h1 {
     margin: 0 0 0.5rem 0;
-    font-size: 1.75rem;
+    font-size: clamp(1.25rem, 5vw, 1.75rem);
     line-height: 1.1;
 }
 
