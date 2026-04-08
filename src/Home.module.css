@@ -22,7 +22,7 @@
     flex-direction: column;
     padding: 3rem;
     gap: 1rem;
-    border-radius: 120px 120px 0 0;
+    border-radius: 40px 40px 0 0;
     background: linear-gradient(180deg, #040410 0%, rgba(75, 75, 108, 0.30) 100%);
     backdrop-filter: blur(10px);
     font-size: 0.75rem;
@@ -203,10 +203,10 @@
 
 @media (min-width: 1000px) {
     .herotextcontainer {
-        max-width: 78vw;
+        max-width: 58vw;
         font-size: 1rem;
-        padding: 7rem 5rem;
-        border-radius: 170px 170px 0 0;
+        padding: 4rem 4rem;
+        border-radius: 50px 50px 0 0;
         gap: 1.25rem;
     }
 
@@ -240,13 +240,13 @@
 
 @media (min-width: 1200px) {
     .herotextcontainer {
-        max-width: 68vw;
+        max-width: 55vw;
     }
 }
 
 @media (min-width: 1500px) {
     .herotextcontainer {
-        max-width: 58vw;
+        max-width: 50vw;
     }
 
 
