@@ -203,10 +203,10 @@
 
 @media (min-width: 1000px) {
     .herotextcontainer {
-        max-width: 70vw;
+        max-width: 78vw;
         font-size: 1rem;
-        padding: 5rem;
-        border-radius: 150px 150px 0 0;
+        padding: 7rem 5rem;
+        border-radius: 170px 170px 0 0;
         gap: 1.25rem;
     }
 
@@ -240,13 +240,13 @@
 
 @media (min-width: 1200px) {
     .herotextcontainer {
-        max-width: 60vw;
+        max-width: 68vw;
     }
 }
 
 @media (min-width: 1500px) {
     .herotextcontainer {
-        max-width: 50vw;
+        max-width: 58vw;
     }
 
 
