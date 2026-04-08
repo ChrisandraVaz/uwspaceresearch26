@@ -1,0 +1,196 @@
+/* Base (mobile) */
+.heroPhoto {
+    margin: 2rem 0;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.heroPhoto img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.caption {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    padding: 0.75rem 1rem;
+    margin: 0;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.statsRow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.875rem;
+    margin: 2.5rem 0;
+}
+
+.statCard {
+    background: rgba(195, 110, 226, 0.08);
+    border: 1px solid rgba(195, 110, 226, 0.25);
+    border-radius: 1rem;
+    padding: 1.25rem 0.75rem;
+    text-align: center;
+    backdrop-filter: blur(8px);
+}
+
+.statCard h2 {
+    font-size: 1.75rem;
+    margin: 0 0 0.35rem 0;
+    color: #e8c8f4;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.statCard p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.3;
+}
+
+.sideBySide {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin: 1.75rem 0;
+}
+
+.photoCard {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.photoCard img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    display: block;
+}
+
+.photoCard .caption {
+    flex: 1;
+}
+
+.fabGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 1.75rem 0;
+}
+
+.sectionPhotoFull {
+    margin: 1.75rem 0;
+    border-radius: 1rem;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.sectionPhotoFull img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Tablet / mid-size */
+@media (min-width: 640px) {
+    .heroPhoto {
+        margin: 2.5rem 0;
+        border-radius: 1.25rem;
+    }
+
+    .statsRow {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        margin: 3rem 0;
+    }
+
+    .statCard {
+        padding: 1.5rem 1rem;
+    }
+
+    .statCard h2 {
+        font-size: 2rem;
+    }
+
+    .sideBySide {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .fabGrid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.25rem;
+    }
+
+    .photoCard img {
+        aspect-ratio: 4 / 3;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .heroPhoto {
+        margin: 4rem 0;
+        border-radius: 1.5rem;
+    }
+
+    .heroPhoto img {
+        max-height: 70vh;
+    }
+
+    .caption {
+        font-size: 0.9rem;
+        padding: 1rem 1.25rem;
+    }
+
+    .statsRow {
+        gap: 1.5rem;
+        margin: 4rem 0;
+    }
+
+    .statCard {
+        padding: 2rem 1.25rem;
+    }
+
+    .statCard h2 {
+        font-size: 2.75rem;
+    }
+
+    .statCard p {
+        font-size: 0.95rem;
+    }
+
+    .sideBySide {
+        gap: 2rem;
+        margin: 2.5rem 0;
+    }
+
+    .fabGrid {
+        gap: 1.75rem;
+        margin: 2.5rem 0;
+    }
+
+    .sectionPhotoFull {
+        margin: 2.5rem 0;
+        border-radius: 1.25rem;
+    }
+}
+
+/* Large desktop */
+@media (min-width: 1440px) {
+    .statCard h2 {
+        font-size: 3rem;
+    }
+}

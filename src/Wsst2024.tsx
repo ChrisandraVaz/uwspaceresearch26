@@ -5,11 +5,23 @@ import wsstBg from "./assets/wsstbg2.png";
 
 import styles from "./Astra.module.css";
 import wsstStyles from "./Wsst.module.css";
+import w24 from "./Wsst2024.module.css";
 import { TeamGrid, wsst2024Team } from "./team";
 
 // Solder comparison images (reused)
 import solderLowVoid from "./assets/wsst/solder-low-void.jpg";
 import solderHighVoid from "./assets/wsst/solder-high-void.jpg";
+
+// 2023-2024 project photos
+import imgTeam from "./assets/wsst2024/team-waterloo.png";
+import imgCentrifuge from "./assets/wsst2024/centrifuge-assembly.png";
+import imgCentrifugeFinal from "./assets/wsst2024/centrifuge-final.png";
+import imgModule from "./assets/wsst2024/centrifuge-module-build.jpg";
+import imgHeater from "./assets/wsst2024/kapton-heater-module.jpg";
+import imgTestBench from "./assets/wsst2024/test-bench.png";
+import imgMachiningBandsaw from "./assets/wsst2024/machining-bandsaw.jpg";
+import imgMachiningMill from "./assets/wsst2024/machining-mill.jpg";
+import imgThermalTest from "./assets/wsst2024/thermal-test.png";
 
 export default function Wsst2024() {
   return (
@@ -26,15 +38,47 @@ export default function Wsst2024() {
           <div className={styles.introleft}>
             <p>
               The inaugural WSST project designed, built, and flew a centrifuge
-              soldering experiment aboard the National Research Council's Falcon
-              20 aircraft during the CAN-RGX parabolic flight campaign. The
-              experiment tested whether simulating gravity with a centrifuge
-              could improve the quality of solder joints formed in microgravity.
+              soldering experiment aboard the National Research Council's
+              Falcon 20 aircraft during the CAN-RGX parabolic flight campaign.
+              The experiment tested whether simulating gravity with a
+              centrifuge could improve the quality of solder joints formed in
+              microgravity.
             </p>
           </div>
           <div className={styles.introright}>
             <h4>Time Frame</h4>
-            <p>September 2023 - July 2024</p>
+            <p>Sept 2023 - July 2024</p>
+          </div>
+        </div>
+
+        {/* Hero photo — finished centrifuge */}
+        <div className={w24.heroPhoto}>
+          <img
+            src={imgCentrifuge}
+            alt="Final assembled WSST centrifuge with SEDS logo"
+          />
+          <p className={w24.caption}>
+            Final assembled centrifuge during integration testing.
+          </p>
+        </div>
+
+        {/* Quick stats */}
+        <div className={w24.statsRow}>
+          <div className={w24.statCard}>
+            <h2>400+</h2>
+            <p>Solder samples</p>
+          </div>
+          <div className={w24.statCard}>
+            <h2>8</h2>
+            <p>Soldering modules</p>
+          </div>
+          <div className={w24.statCard}>
+            <h2>600 W</h2>
+            <p>Power budget</p>
+          </div>
+          <div className={w24.statCard}>
+            <h2>20-30 s</h2>
+            <p>Microgravity per parabola</p>
           </div>
         </div>
 
@@ -56,13 +100,13 @@ export default function Wsst2024() {
           <div className={styles.projectgoalssection4}>
             <h5>The science behind it:</h5>
             <p>
-              Under Earth's gravity, molten solder undergoes natural convection,
-              and buoyant forces help lift trapped gas bubbles out of the joint
-              during solidification. In microgravity, these forces vanish, so
-              gas bubbles remain trapped and form voids inside the joint. Our
-              experiment used a centrifuge to generate artificial gravity during
-              the melt, aiming to restore the natural buoyant forces and produce
-              higher-quality solder joints.
+              Under Earth's gravity, molten solder undergoes natural
+              convection, and buoyant forces help lift trapped gas bubbles out
+              of the joint during solidification. In microgravity, these forces
+              vanish, so gas bubbles remain trapped and form voids inside the
+              joint. Our experiment used a centrifuge to generate artificial
+              gravity during the melt, aiming to restore the natural buoyant
+              forces and produce higher-quality solder joints.
             </p>
             <div className={wsstStyles.solderComparison}>
               <div className={wsstStyles.solderComparisonItem}>
@@ -99,8 +143,8 @@ export default function Wsst2024() {
                 <h2>1</h2>
                 <p>
                   Demonstrate centrifuge operation in microgravity and verify
-                  its ability to produce artificial gravity via onboard RPM and
-                  accelerometer data
+                  its ability to produce artificial gravity via onboard RPM
+                  and accelerometer data
                 </p>
               </div>
               <div className={styles.singleprojectaim}>
@@ -128,13 +172,38 @@ export default function Wsst2024() {
           <div className={wsstStyles.experimentOverview}>
             <h3>Experiment Design</h3>
             <p>
-              The 2023-2024 experiment focused on melting solder paste samples
-              using Kapton-polyimide resistive heaters bonded to copper foil.
-              Eight soldering modules, each carrying 50 solder paste points,
-              were arranged vertically around the circumference of a
-              cylindrical centrifuge — yielding over 400 samples and more than
-              125 joints per comparison population.
+              The 2023-2024 experiment melted solder paste samples using
+              Kapton-polyimide resistive heaters bonded to copper foil. Eight
+              soldering modules, each carrying 50 solder paste points, were
+              arranged vertically around the circumference of a cylindrical
+              centrifuge — yielding over 400 samples and more than 125 joints
+              per comparison population.
             </p>
+
+            {/* Heater module photo */}
+            <div className={w24.sideBySide}>
+              <div className={w24.photoCard}>
+                <img
+                  src={imgHeater}
+                  alt="Kapton polyimide heater film bonded to copper foil mounted in a stud fixture"
+                />
+                <p className={w24.caption}>
+                  A single soldering module: Kapton heater film bonded to
+                  copper foil, held between threaded studs.
+                </p>
+              </div>
+              <div className={w24.photoCard}>
+                <img
+                  src={imgThermalTest}
+                  alt="FLIR thermal camera capturing heater module at 168 degrees C"
+                />
+                <p className={w24.caption}>
+                  FLIR thermal imaging verifies the heater reaches melt
+                  temperature (~168 °C) within seconds.
+                </p>
+              </div>
+            </div>
+
             <div className={wsstStyles.experimentDetails}>
               <div className={wsstStyles.experimentDetailCard}>
                 <h5>Heating Method</h5>
@@ -162,7 +231,7 @@ export default function Wsst2024() {
                 <h5>Analysis</h5>
                 <p>
                   Electrical conductivity measured via digital multimeter.
-                  Cross-sectional void percentage analyzed using compound
+                  Cross-sectional void percentage analyzed with compound
                   microscopy and MATLAB image processing.
                 </p>
               </div>
@@ -175,16 +244,47 @@ export default function Wsst2024() {
           <div className={styles.projectgoalssection1}>
             <h3>Mechanical Design</h3>
             <p>
-              The entire system was housed inside a 50 x 50 x 50 cm Pelican
+              The entire system was housed inside a 50 × 50 × 50 cm Pelican
               case. A brushless DC gear motor drove the cylindrical centrifuge
               through a shaft coupler, while roller bearings on three axes
               (rated 45 lb each) carried the gravitational loads with a safety
-              factor greater than 6x. An aluminum-extrusion exostructure
-              supported the power electronics and routed cables to a slip ring.
-              A 99.97% soldering-grade filter sat atop the centrifuge to capture
-              lead, cadmium, and arsenic fumes. Vibration-isolation screws
-              decoupled the centrifuge base from the outer case.
+              factor greater than 6×. An aluminum-extrusion exostructure
+              supported the power electronics and routed cables to a slip
+              ring. A 99.97% soldering-grade filter sat atop the centrifuge to
+              capture lead, cadmium, and arsenic fumes.
             </p>
+          </div>
+
+          {/* Build / fabrication gallery */}
+          <div className={w24.fabGrid}>
+            <div className={w24.photoCard}>
+              <img
+                src={imgMachiningBandsaw}
+                alt="Team member cutting aluminum on a bandsaw"
+              />
+              <p className={w24.caption}>
+                Bandsawing aluminum stock for the exostructure.
+              </p>
+            </div>
+            <div className={w24.photoCard}>
+              <img
+                src={imgMachiningMill}
+                alt="Drilling an aluminum extrusion on a milling machine"
+              />
+              <p className={w24.caption}>
+                Milling mounting holes into the aluminum extrusion frame.
+              </p>
+            </div>
+            <div className={w24.photoCard}>
+              <img
+                src={imgModule}
+                alt="Team member assembling a soldering module inside the centrifuge"
+              />
+              <p className={w24.caption}>
+                Loading soldering modules into the 3D-printed centrifuge
+                drum.
+              </p>
+            </div>
           </div>
         </div>
 
@@ -197,8 +297,21 @@ export default function Wsst2024() {
               power budget. An Arduino drove the motor while an STM32
               microcontroller controlled the eight soldering modules via
               closed-loop thermistor feedback. An accelerometer recorded
-              centrifuge acceleration in real time throughout each parabola.
-              Sensor data was logged on-board for post-flight analysis.
+              centrifuge acceleration in real time throughout each parabola,
+              and all sensor data was logged on-board for post-flight
+              analysis.
+            </p>
+          </div>
+
+          <div className={w24.sectionPhotoFull}>
+            <img
+              src={imgTestBench}
+              alt="Bench-top integration test with centrifuge mounted on exostructure and Arduino control electronics"
+            />
+            <p className={w24.caption}>
+              Full bench-top integration test — centrifuge on exostructure,
+              motor driver, and Arduino-based control electronics wired end to
+              end.
             </p>
           </div>
         </div>
@@ -216,7 +329,7 @@ export default function Wsst2024() {
             <div className={wsstStyles.nextStepsGrid}>
               <div className={wsstStyles.nextStepItem}>
                 <span className={wsstStyles.nextStepNumber}>1</span>
-                <p>Level flight: pre-heat samples to 95 degrees C (~15 s)</p>
+                <p>Level flight: pre-heat samples to 95 °C (~15 s)</p>
               </div>
               <div className={wsstStyles.nextStepItem}>
                 <span className={wsstStyles.nextStepNumber}>2</span>
@@ -232,8 +345,8 @@ export default function Wsst2024() {
               <div className={wsstStyles.nextStepItem}>
                 <span className={wsstStyles.nextStepNumber}>4</span>
                 <p>
-                  Solder solidifies within ~20 s of microgravity onset; log
-                  centrifuge RPM, acceleration, and sample temperatures
+                  Solder solidifies within ~20 s; log RPM, acceleration, and
+                  sample temperatures
                 </p>
               </div>
             </div>
@@ -245,14 +358,26 @@ export default function Wsst2024() {
           <div className={styles.projectgoalssection1}>
             <h3>Outreach</h3>
             <p>
-              Alongside the flight campaign, WSST partnered with the University
-              of Waterloo Women in Engineering chapter for Introduce a Girl to
-              Engineering Day on March 7, 2024. The team ran a hands-on
-              centrifuge-building workshop for elementary school students and a
-              soldering workshop for high schoolers, tying both activities back
-              to the physics behind the CAN-RGX experiment.
+              Alongside the flight campaign, WSST partnered with the
+              University of Waterloo Women in Engineering chapter for
+              Introduce a Girl to Engineering Day on March 7, 2024. The team
+              ran a hands-on centrifuge-building workshop for elementary
+              school students and a soldering workshop for high schoolers,
+              tying both activities back to the physics behind the CAN-RGX
+              experiment.
             </p>
           </div>
+        </div>
+
+        {/* Final showcase photo */}
+        <div className={w24.heroPhoto}>
+          <img
+            src={imgCentrifugeFinal}
+            alt="Final WSST centrifuge on display at the CAN-RGX final event"
+          />
+          <p className={w24.caption}>
+            The completed centrifuge on display at the CAN-RGX final event.
+          </p>
         </div>
 
         {/* Competition */}
@@ -263,15 +388,16 @@ export default function Wsst2024() {
               CAN-RGX (Canadian Reduced Gravity Experiment) is a premier
               reduced-gravity experiment competition for Canadian
               post-secondary students. Organized by SEDS Canada in partnership
-              with the Canadian Space Agency and the National Research Council,
-              the program invites student teams to design, build, and fly
-              experiments aboard the NRC's modified Falcon 20 aircraft.
+              with the Canadian Space Agency and the National Research
+              Council, the program invites student teams to design, build,
+              and fly experiments aboard the NRC's modified Falcon 20
+              aircraft.
               <br />
               <br />
               WSST's inaugural team was selected for CAN-RGX and flew the
               centrifuge soldering experiment in July 2024 from Longueuil,
-              Quebec. Each parabola delivered 20-30 seconds of microgravity for
-              the experiment to execute its autonomous mission profile.
+              Quebec. Each parabola delivered 20-30 seconds of microgravity
+              for the experiment to execute its autonomous mission profile.
               <br />
               <br />
               For more information, check out the{" "}
@@ -280,6 +406,18 @@ export default function Wsst2024() {
               </a>
             </p>
           </div>
+        </div>
+
+        {/* Team photo */}
+        <div className={w24.heroPhoto}>
+          <img
+            src={imgTeam}
+            alt="WSST 2023-2024 team in front of the Waterloo Engineering sign"
+          />
+          <p className={w24.caption}>
+            The 2023-2024 team with the payload case outside Waterloo
+            Engineering.
+          </p>
         </div>
 
         {/* Team */}
