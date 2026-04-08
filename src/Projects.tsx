@@ -23,8 +23,8 @@ export default function Projects() {
                 <p>Waterloo Space Soldering Team</p>
               </div>
               <div className={styles.containerright}>
-                <p>Nov 2025 - Current</p>
-                <p>CAN-RGX 9</p>
+                <span className={styles.yearTag}>2025 - 2026</span>
+                <span className={styles.compTag}>CAN-RGX 9</span>
               </div>
             </div>
           </Link>
@@ -38,8 +38,8 @@ export default function Projects() {
                 <p>Adaptive Signal Transmission and Real-time Analytics</p>
               </div>
               <div className={styles.containerright}>
-                <p>Jan 2025 - Current</p>
-                <p>CAN-SBX 7</p>
+                <span className={styles.yearTag}>2025</span>
+                <span className={styles.compTag}>CAN-SBX 7</span>
               </div>
             </div>
           </Link>
@@ -53,8 +53,8 @@ export default function Projects() {
                 <p>Waterloo Space Soldering Team (inaugural)</p>
               </div>
               <div className={styles.containerright}>
-                <p>Sept 2023 - July 2024</p>
-                <p>CAN-RGX</p>
+                <span className={styles.yearTag}>2023 - 2024</span>
+                <span className={styles.compTag}>CAN-RGX</span>
               </div>
             </div>
           </Link>
@@ -68,8 +68,8 @@ export default function Projects() {
                 <p>Detecting and tracking space debris from orbit</p>
               </div>
               <div className={styles.containerright}>
-                <p>Jan 2026 - Current</p>
-                <p>Hyperion</p>
+                <span className={styles.yearTag}>2026</span>
+                <span className={styles.compTag}>Hyperion</span>
               </div>
             </div>
           </Link>
