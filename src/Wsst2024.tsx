@@ -24,6 +24,30 @@ import imgMachiningBandsaw from "./assets/wsst2024/machining-bandsaw.jpg";
 import imgMachiningMill from "./assets/wsst2024/machining-mill.jpg";
 import imgThermalTest from "./assets/wsst2024/thermal-test.png";
 
+// Carousel images
+import c1 from "./assets/wsst2024/carousel/IMG-5072.jpg";
+import c2 from "./assets/wsst2024/carousel/IMG_9478-2.jpg";
+import c3 from "./assets/wsst2024/carousel/IMG_9487.jpg";
+import c4 from "./assets/wsst2024/carousel/IMG_9491.jpg";
+import c5 from "./assets/wsst2024/carousel/IMG_9496.jpg";
+import c6 from "./assets/wsst2024/carousel/IMG_9501.jpg";
+import c7 from "./assets/wsst2024/carousel/IMG_9509.jpg";
+import c8 from "./assets/wsst2024/carousel/IMG_9636.jpg";
+import c9 from "./assets/wsst2024/carousel/IMG_9675.jpg";
+import c10 from "./assets/wsst2024/carousel/IMG_9686.jpg";
+import c11 from "./assets/wsst2024/carousel/IMG_9798.jpg";
+import c12 from "./assets/wsst2024/carousel/IMG_9811.jpg";
+import c13 from "./assets/wsst2024/carousel/IMG_9819.jpg";
+import c14 from "./assets/wsst2024/carousel/IMG_9822.jpg";
+import c15 from "./assets/wsst2024/carousel/IMG_3576.jpg";
+import c16 from "./assets/wsst2024/carousel/IMG_4396.jpg";
+import c17 from "./assets/wsst2024/carousel/IMG_4460.jpg";
+import c18 from "./assets/wsst2024/carousel/IMG_4471.jpg";
+import c19 from "./assets/wsst2024/carousel/IMG_4473.jpg";
+import c20 from "./assets/wsst2024/carousel/team-lab.jpeg";
+
+const carouselImages = [c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14, c15, c16, c17, c18, c19, c20];
+
 export default function Wsst2024() {
   return (
     <>
@@ -406,6 +430,20 @@ export default function Wsst2024() {
                 official website.
               </a>
             </p>
+          </div>
+        </div>
+
+        {/* Infinite scrolling carousel */}
+        <div className={w24.carouselSection}>
+          <h3>Moments from the Build</h3>
+          <div className={w24.carousel}>
+            <div className={w24.carouselTrack}>
+              {[...carouselImages, ...carouselImages].map((src, i) => (
+                <div className={w24.carouselItem} key={i}>
+                  <img src={src} alt="" loading="lazy" />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
