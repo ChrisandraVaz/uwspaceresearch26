@@ -18,22 +18,22 @@
 .herotextcontainer {
     display: flex;
     justify-content: center;
-    max-width: 85vw;
+    max-width: 80vw;
     flex-direction: column;
-    padding: 4rem 3rem;
-    gap: 1.25rem;
-    border-radius: 160px 160px 0 0;
+    padding: 3rem;
+    gap: 1rem;
+    border-radius: 120px 120px 0 0;
     background: linear-gradient(180deg, #040410 0%, rgba(75, 75, 108, 0.30) 100%);
     backdrop-filter: blur(10px);
-    font-size: 0.95rem;
+    font-size: 0.75rem;
     padding-bottom: 20vw;
 }
 
 .herotextcontainer h1 {
     color: var(--text-color);
     font-family: var(--header-font-family);
-    font-size: clamp(2.5rem, 5vw + 0.75rem, 5.5rem);
-    max-width: 1000px;
+    font-size: clamp(2rem, 3.5vw + 0.75rem, 4rem);
+    max-width: 600px;
     line-height: 100%;
     margin: 0;
 }
@@ -203,11 +203,11 @@
 
 @media (min-width: 1000px) {
     .herotextcontainer {
-        max-width: 80vw;
-        font-size: 1.2rem;
-        padding: 6rem 7rem;
-        border-radius: 200px 200px 0 0;
-        gap: 1.75rem;
+        max-width: 70vw;
+        font-size: 1rem;
+        padding: 5rem;
+        border-radius: 150px 150px 0 0;
+        gap: 1.25rem;
     }
 
     .projectscontainer {
@@ -240,13 +240,13 @@
 
 @media (min-width: 1200px) {
     .herotextcontainer {
-        max-width: 75vw;
+        max-width: 60vw;
     }
 }
 
 @media (min-width: 1500px) {
     .herotextcontainer {
-        max-width: 70vw;
+        max-width: 50vw;
     }
 
 
