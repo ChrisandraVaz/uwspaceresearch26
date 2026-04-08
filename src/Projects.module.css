@@ -61,8 +61,20 @@
     margin-bottom: 2rem;
 }
 
+.containerright {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
 .containerright p {
     margin: 0;
+}
+
+.containerleft {
+    min-width: 0;
 }
 
 .yearTag {
