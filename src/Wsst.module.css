@@ -388,6 +388,12 @@
     margin-top: 1.5rem;
 }
 
+@media (min-width: 640px) {
+    .groundTestGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 /* Desktop overrides */
 @media (min-width: 1000px) {
     .contactBanner {

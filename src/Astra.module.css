@@ -169,7 +169,7 @@
   box-shadow: 0 4px 8px 0 rgba(101, 64, 211, 0.60) inset;
   display: flex;
   align-items: center;
-  padding: 1.25rem 1.5rem;
+  padding: 1rem 1.25rem;
   gap: 1rem;
 }
 
