@@ -43,12 +43,12 @@
 .timelineDate {
     font-weight: 700;
     font-size: 0.85rem;
-    color: var(--text-color);
+    color: var(--text-color-dark);
 }
 
 .timelineDesc {
     font-size: 0.8rem;
-    color: var(--text-color);
+    color: var(--text-color-dark);
     opacity: 0.9;
 }
 
