@@ -184,6 +184,11 @@
   padding: 1.5rem 1.25rem;
 }
 
+.aboutthecompetition,
+.aboutthecompetition * {
+  color: var(--text-color-dark);
+}
+
 .aboutthecompetitioncontent a {
   color: var(--text-color-dark);
   text-decoration: underline;
