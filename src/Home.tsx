@@ -16,13 +16,9 @@ export default function Home() {
             dedicated to advancing aerospace research through hands-on design
             and engineering competitions.
           </p>
-          <a
-            className={styles.projectsbutton}
-            href="#projects"
-            onClick={handleAnchorClick}
-          >
+          <Link to="/projects" className={styles.projectsbutton}>
             See our Projects
-          </a>
+          </Link>
         </div>
         <div className={styles.overlaysun}></div>
       </div>
