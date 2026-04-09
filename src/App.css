@@ -39,7 +39,8 @@ nav {
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  padding: 0.5rem 2rem;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
   background: linear-gradient(180deg, #040410 0%, rgba(75, 75, 108, 0) 100%);
 }
 
@@ -51,6 +52,21 @@ nav {
 
 #navbar-logo {
   margin-right: auto;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+#navbar-logo img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  #navbar-logo img {
+    height: 56px;
+  }
 }
 
 .navbar-link {
@@ -61,7 +77,14 @@ nav {
 .navbar-links {
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap: 18px;
+  flex-shrink: 0;
+}
+
+@media (min-width: 1024px) {
+  .navbar-links {
+    gap: 40px;
+  }
 }
 
 .navbar-link:hover {
