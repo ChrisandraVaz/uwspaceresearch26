@@ -16,9 +16,19 @@ export default function Home() {
             dedicated to advancing aerospace research through hands-on design
             and engineering competitions.
           </p>
-          <Link to="/projects" className={styles.projectsbutton}>
-            See our Projects
-          </Link>
+          <div className={styles.heroButtons}>
+            <Link to="/projects" className={styles.projectsbutton}>
+              See our Projects
+            </Link>
+            <a
+              href="https://forms.gle/1A8g2wmryW5533Z98"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.joinButton}
+            >
+              Join our Team →
+            </a>
+          </div>
         </div>
         <div className={styles.overlaysun}></div>
       </div>

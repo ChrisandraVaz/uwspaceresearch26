@@ -44,6 +44,31 @@
 }
 
 
+.heroButtons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.joinButton {
+    display: inline-block;
+    padding: 0.4rem 0.75rem;
+    font-size: 0.85rem;
+    color: var(--text-color);
+    font-family: inherit;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    transition: color 200ms, border-color 200ms;
+    cursor: pointer;
+}
+
+.joinButton:hover {
+    color: #E168FF;
+    border-color: #E168FF;
+}
+
 .projectsbutton {
     display: inline-block;
     padding: 0.5rem;
