@@ -18,9 +18,9 @@
 .herotextcontainer {
     display: flex;
     justify-content: center;
-    max-width: 80vw;
+    max-width: 88vw;
     flex-direction: column;
-    padding: 3rem;
+    padding: 2rem 1.5rem;
     gap: 1rem;
     border-radius: 80px 80px 0 0;
     background: linear-gradient(180deg, #040410 0%, rgba(75, 75, 108, 0.30) 100%);
@@ -32,8 +32,9 @@
 .herotextcontainer h1 {
     color: var(--text-color);
     font-family: var(--header-font-family);
-    font-size: clamp(2rem, 3.5vw + 0.75rem, 4rem);
+    font-size: clamp(1.75rem, 7vw, 3rem);
     max-width: 600px;
+    overflow-wrap: break-word;
     line-height: 100%;
     margin: 0;
 }

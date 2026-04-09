@@ -40,7 +40,7 @@ nav {
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.75rem;
   background: linear-gradient(180deg, #040410 0%, rgba(75, 75, 108, 0) 100%);
 }
 
@@ -58,7 +58,7 @@ nav {
 }
 
 #navbar-logo img {
-  height: 40px;
+  height: 32px;
   width: auto;
   display: block;
 }
@@ -72,12 +72,20 @@ nav {
 .navbar-link {
   color: var(--text-color);
   transition-duration: 200ms;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+@media (min-width: 1024px) {
+  .navbar-link {
+    font-size: 1rem;
+  }
 }
 
 .navbar-links {
   display: flex;
   flex-direction: row;
-  gap: 18px;
+  gap: 14px;
   flex-shrink: 0;
 }
 

@@ -63,10 +63,3 @@ export default function Home() {
   );
 }
 
-function handleAnchorClick() {
-  document.documentElement.style.scrollBehavior = "smooth";
-
-  setTimeout(() => {
-    document.documentElement.style.scrollBehavior = "auto";
-  }, 500);
-}
