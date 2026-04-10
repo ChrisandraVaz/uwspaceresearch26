@@ -1,4 +1,5 @@
 import styles from "./Astra.module.css";
+import wsstStyles from "./Wsst.module.css";
 
 import astraBg from "./assets/astrabg2.png";
 
@@ -19,6 +20,14 @@ export default function Astra() {
           subtitle="Adaptive Signal Transmission and Real-time Analytics"
           backgroundImage={astraBg}
         />
+        <div className={wsstStyles.contactBanner}>
+          <p>
+            Interested in our work or want to collaborate? Reach out to us at{" "}
+            <a href="mailto:uwspacesoldering@gmail.com">
+              uwspacesoldering@gmail.com
+            </a>
+          </p>
+        </div>
         <div className={styles.intro}>
           <div className={styles.introleft}>
             <p>
