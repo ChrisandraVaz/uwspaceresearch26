@@ -55,8 +55,8 @@ export default function Sponsors() {
         <h3>Interested in Sponsoring Us?</h3>
         <p>
           We'd love to connect! Reach out to us at{" "}
-          <a href="mailto:uwspaceresearchteam@gmail.com">
-            uwspaceresearchteam@gmail.com
+          <a href="mailto:uwspaceresearch@gmail.com">
+            uwspaceresearch@gmail.com
           </a>{" "}
           to learn more about sponsorship opportunities.
         </p>

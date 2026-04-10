@@ -13,7 +13,7 @@ export default function Footer() {
             </p>
           </div>
           <div className={styles.footerlinks}>
-            <a href="mailto:uwspaceresearchteam@gmail.com">Email</a>
+            <a href="mailto:uwspaceresearch@gmail.com">Email</a>
             <a
               href="https://www.instagram.com/uwspaceresearch/"
               target="_blank"

@@ -67,8 +67,8 @@ export default function About() {
           <h4>Interested in Sponsoring Us?</h4>
           <p>
             We'd love to connect! Reach out to us at{" "}
-            <a href="mailto:uwspaceresearchteam@gmail.com">
-              uwspaceresearchteam@gmail.com
+            <a href="mailto:uwspaceresearch@gmail.com">
+              uwspaceresearch@gmail.com
             </a>{" "}
             to learn more about sponsorship opportunities.
           </p>
