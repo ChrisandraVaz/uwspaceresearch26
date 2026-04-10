@@ -68,7 +68,7 @@ export default function Wsst2024() {
 
     <div className={wsstStyles.contactBanner}>
      <p>
-       Interested in WSST? Reach out at{" "}
+       Interested in our work or want to collaborate? Reach out to us at{" "}
        <a href="mailto:uwspacesoldering@gmail.com">
          uwspacesoldering@gmail.com
        </a>
