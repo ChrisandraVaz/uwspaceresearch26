@@ -66,6 +66,15 @@ export default function Wsst2024() {
      backgroundImage={wsstBg}
     />
 
+    <div className={wsstStyles.contactBanner}>
+     <p>
+       Interested in WSST? Reach out at{" "}
+       <a href="mailto:uwspacesoldering@gmail.com">
+         uwspacesoldering@gmail.com
+       </a>
+     </p>
+    </div>
+
     {/* Intro */}
     <div className={styles.intro}>
      <div className={styles.introleft}>
